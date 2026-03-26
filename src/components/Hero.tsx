@@ -52,7 +52,7 @@ const Hero = () => {
           <div className="glow-primary rounded-2xl overflow-hidden shadow-2xl">
             <img
               src={extensionScreenshot}
-              alt="Chat Exporter for AI Studio extension popup showing PDF, Markdown, and JSON export options with dark mode toggle and progress bar"
+              alt="Google AI Studio Chat Exporter extension popup showing PDF, Markdown, and JSON export options with dark mode toggle and progress bar"
               className="w-full h-auto"
               loading="lazy"
               width={800}

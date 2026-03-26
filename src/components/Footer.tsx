@@ -8,9 +8,9 @@ const Footer = () => {
         <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
           <div>
             <div className="flex items-center gap-2 mb-1">
-              <img src={logoPlaceholder} alt="Chat Exporter for AI Studio logo" className="h-6 w-6 rounded-md" width={24} height={24} />
+              <img src={logoPlaceholder} alt="Google AI Studio Chat Exporter logo" className="h-6 w-6 rounded-md" width={24} height={24} />
               <p className="text-base font-semibold tracking-tight text-foreground whitespace-nowrap">
-                Chat Exporter for Google AI Studio
+                Google AI Studio Chat Exporter
               </p>
             </div>
             <p className="mt-3 text-sm text-muted-foreground">Not affiliated with or endorsed by Google LLC.</p>

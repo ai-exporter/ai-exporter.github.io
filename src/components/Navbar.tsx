@@ -8,9 +8,9 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 border-b border-foreground/5 bg-background/70 backdrop-blur-xl">
       <div className="container flex h-16 items-center justify-between">
         <a href="/" className="flex items-center gap-2.5">
-          <img src={logoPlaceholder} alt="Chat Exporter for AI Studio logo" className="h-8 w-8 rounded-lg" width={32} height={32} />
+          <img src={logoPlaceholder} alt="Google AI Studio Chat Exporter logo" className="h-8 w-8 rounded-lg" width={32} height={32} />
           <span className="text-base font-semibold tracking-tight text-foreground whitespace-nowrap">
-            Chat Exporter for Google AI Studio
+            Google AI Studio Chat Exporter
           </span>
         </a>
 

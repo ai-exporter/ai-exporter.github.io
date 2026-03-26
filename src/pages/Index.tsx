@@ -29,7 +29,7 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Chat Exporter for Google AI Studio — Export Chats to PDF, Markdown & JSON</title>
+        <title>Google AI Studio Chat Exporter — Export to PDF, Markdown & JSON | Free Chrome Extension</title>
         <meta name="description" content="Free Chrome extension to export Google AI Studio conversations to PDF, Markdown, or JSON. 100% private — all processing happens locally in your browser." />
         <link rel="canonical" href="https://aistudio-chat-exporter.vercel.app/" />
       </Helmet>

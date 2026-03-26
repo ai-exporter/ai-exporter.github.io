@@ -12,8 +12,8 @@ const Privacy = () => {
   return (
     <div className="min-h-screen bg-[#111216] text-[#e4e4e7] font-sans flex flex-col">
       <Helmet>
-        <title>Privacy Policy — Chat Exporter for Google AI Studio</title>
-        <meta name="description" content="Privacy policy for Chat Exporter for Google AI Studio. All data is processed locally in your browser. No servers, no tracking, no data collection." />
+        <title>Privacy Policy — Google AI Studio Chat Exporter</title>
+        <meta name="description" content="Privacy policy for Google AI Studio Chat Exporter. All data is processed locally in your browser. No servers, no tracking, no data collection." />
         <link rel="canonical" href="https://aistudio-chat-exporter.vercel.app/privacy" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",

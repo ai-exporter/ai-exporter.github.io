@@ -3,7 +3,7 @@ import { ChevronDown } from "lucide-react";
 
 const faqs = [
   {
-    q: "Does Chat Exporter for AI Studio send my conversations to any server?",
+    q: "Does Google AI Studio Chat Exporter send my conversations to any server?",
     a: "No. All processing happens locally inside your browser. Your conversations never leave your device.",
   },
   {
