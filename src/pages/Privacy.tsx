@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 
 const Privacy = () => {
   // Ensure the page scrolls to top when navigating from the bottom of the home page
@@ -10,6 +11,29 @@ const Privacy = () => {
 
   return (
     <div className="min-h-screen bg-[#111216] text-[#e4e4e7] font-sans flex flex-col">
+      <Helmet>
+        <title>Privacy Policy — Chat Exporter for Google AI Studio</title>
+        <meta name="description" content="Privacy policy for Chat Exporter for Google AI Studio. All data is processed locally in your browser. No servers, no tracking, no data collection." />
+        <link rel="canonical" href="https://aistudio-chat-exporter.vercel.app/privacy" />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://aistudio-chat-exporter.vercel.app/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Privacy Policy",
+              "item": "https://aistudio-chat-exporter.vercel.app/privacy"
+            }
+          ]
+        })}</script>
+      </Helmet>
       <Navbar />
       <main className="flex-1 mx-auto max-w-3xl px-6 pt-32 pb-24 sm:pt-40 sm:pb-32 w-full">
         <h1 className="text-3xl font-bold tracking-tight text-white mb-2">Privacy Policy</h1>

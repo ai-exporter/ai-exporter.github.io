@@ -8,6 +8,7 @@ import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 const Index = () => {
   useScrollAnimation();
@@ -27,6 +28,11 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Chat Exporter for Google AI Studio — Export Chats to PDF, Markdown & JSON</title>
+        <meta name="description" content="Free Chrome extension to export Google AI Studio conversations to PDF, Markdown, or JSON. 100% private — all processing happens locally in your browser." />
+        <link rel="canonical" href="https://aistudio-chat-exporter.vercel.app/" />
+      </Helmet>
       <Navbar />
       <main>
         <Hero />
