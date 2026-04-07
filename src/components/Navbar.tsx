@@ -18,7 +18,7 @@ const Navbar = () => {
           <a href="/#faq" className="text-sm text-muted-foreground transition-colors hover:text-foreground">FAQ</a>
           <a href="/privacy" className="text-sm text-muted-foreground transition-colors hover:text-foreground">Privacy</a>
           <Button variant="hero" size="sm" asChild>
-            <a href="/#cws">
+            <a href="https://chromewebstore.google.com/detail/chat-exporter-for-google/pmccmopibnkjfmaddlloincblhcnmndd">
               <img src="/assets/web-store-logo.png" alt="Chrome Web Store" className="h-4 w-4 mr-1.5" />
               <span className="text-[13px]">Add to Chrome — Free</span>
             </a>

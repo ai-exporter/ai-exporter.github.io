@@ -60,7 +60,7 @@ const softwareAppSchema = {
   operatingSystem: "Chrome",
   browserRequirements: "Requires Google Chrome browser",
   url: SITE_URL,
-  // downloadUrl omitted until extension is published on Chrome Web Store
+  downloadUrl: "https://chromewebstore.google.com/detail/chat-exporter-for-google/pmccmopibnkjfmaddlloincblhcnmndd",
   softwareVersion: "1.0.0",
   datePublished: "2026-03-26",
   dateModified: new Date().toISOString().split("T")[0],
@@ -301,7 +301,7 @@ export default function RootLayout({
             Gemini 3.1 Flash, and all future models.
           </p>
           <p>
-            <a href="https://chromewebstore.google.com/">
+            <a href="https://chromewebstore.google.com/detail/chat-exporter-for-google/pmccmopibnkjfmaddlloincblhcnmndd">
               Add to Chrome — Free
             </a>
           </p>

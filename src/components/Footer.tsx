@@ -13,7 +13,7 @@ const Footer = () => {
             <p className="mt-3 text-sm text-muted-foreground">Not affiliated with or endorsed by Google LLC.</p>
           </div>
           <div className="flex gap-6 text-sm text-muted-foreground">
-            <a href="/#cws" className="transition-colors hover:text-foreground">Chrome Web Store</a>
+            <a href="https://chromewebstore.google.com/detail/chat-exporter-for-google/pmccmopibnkjfmaddlloincblhcnmndd" className="transition-colors hover:text-foreground">Chrome Web Store</a>
             <a href="/privacy" className="transition-colors hover:text-foreground">Privacy Policy</a>
           </div>
         </div>

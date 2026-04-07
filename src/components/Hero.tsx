@@ -29,7 +29,7 @@ const Hero = () => {
         {/* CTAs */}
         <div className="fade-in-up mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <Button variant="hero" size="lg" className="px-6" asChild>
-            <a href="/#cws">
+            <a href="https://chromewebstore.google.com/detail/chat-exporter-for-google/pmccmopibnkjfmaddlloincblhcnmndd">
               <img src="/assets/web-store-logo.png" alt="Chrome Web Store" className="h-7 w-7 mr-2.5" />
               <span className="text-base">Add to Chrome — It's Free</span>
             </a>
