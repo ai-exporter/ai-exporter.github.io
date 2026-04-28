@@ -130,29 +130,6 @@ export default function PrivacyPage() {
 
             <section>
               <h2 className="text-[15px] font-semibold text-[#e4e4e7] mb-3">
-                Uninstall Feedback
-              </h2>
-              <p>
-                An optional feedback form may open when you uninstall the
-                extension to help improve the product. Completing it is entirely
-                voluntary — closing the tab means nothing is submitted.
-              </p>
-              <p className="mt-4">
-                If you choose to respond, Typeform processes your answers under
-                their own privacy policy. We receive only your selected
-                responses. Nothing is linked to your identity or your AI Studio
-                conversations.
-              </p>
-              <p className="mt-4">
-                <strong className="font-semibold text-[#e4e4e7]">
-                  The extension itself collects no data during use — no
-                  analytics, no telemetry, no tracking.
-                </strong>
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-[15px] font-semibold text-[#e4e4e7] mb-3">
                 Contact
               </h2>
               <p>
