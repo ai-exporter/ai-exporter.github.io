@@ -8,7 +8,7 @@ const SITE_URL = "https://aistudio-chat-exporter.vercel.app";
 
 export const metadata: Metadata = {
   title:
-    "Chat Exporter — Save ChatGPT, Gemini & AI Studio chats to PDF, Markdown & JSON",
+    "Chat Exporter: Save ChatGPT, Gemini & AI Studio chats to PDF, Markdown & JSON",
   description:
     "Free Chrome extension to save and download ChatGPT, Gemini, and Google AI Studio conversations. Export chats to PDF, Markdown (.md), or JSON — privately. No servers, no cloud, no account required.",
   authors: [{ name: "Rajat Jain" }],
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title:
-      "Chat Exporter — Save ChatGPT, Gemini & AI Studio chats to PDF, Markdown & JSON",
+      "Chat Exporter: Save ChatGPT, Gemini & AI Studio chats to PDF, Markdown & JSON",
     description:
       "Free Chrome extension to save and download ChatGPT, Gemini, and Google AI Studio conversations. PDF, Markdown, JSON. Fully private, no servers.",
     type: "website",
