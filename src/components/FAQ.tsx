@@ -5,44 +5,44 @@ import { ChevronDown } from "lucide-react";
 
 const faqs = [
   {
-    q: "Does Google AI Studio Chat Exporter send my conversations to any server?",
-    a: "No. All processing happens locally inside your browser. Your conversations never leave your device.",
+    q: "Does Chat Exporter send my conversations to any server?",
+    a: "No. Everything runs locally in your browser. No data is uploaded, no API calls are made, and no analytics are tracked.",
   },
   {
-    q: "Which formats can I export Google AI Studio chats to?",
-    a: "PDF, Markdown (.md), and JSON. You can also copy the entire conversation as Markdown directly to your clipboard.",
+    q: "Which formats can I export chats to?",
+    a: "PDF, Markdown, and JSON. PDF is best for sharing, Markdown for notes apps like Obsidian/Notion, JSON for backups and scripts.",
   },
   {
-    q: "Does it work with all Google AI Studio models?",
-    a: "Yes — Gemini 1.5 Pro, Gemini 2.0 Flash, Gemini 2.5 Pro, Gemini 3 Flash, Gemini 3.1 Pro, Gemini 3.1 Flash, and all other models available in Google AI Studio.",
+    q: "Does it work with ChatGPT, Gemini, and Google AI Studio?",
+    a: "Yes. It works on chatgpt.com, chat.openai.com, gemini.google.com, and aistudio.google.com.",
   },
   {
     q: "Is the extension free?",
-    a: "Yes, completely free. No subscription, no account, no ads.",
+    a: "Yes, 100% free with no limits, no account, and no paywall.",
   },
   {
     q: "Can I export very long conversations?",
-    a: "Yes. The extension uses a smart multi-pass scroll strategy to capture all turns even in 100+ message conversations that use virtual rendering.",
+    a: "Yes. The extension auto-scrolls and captures the full history, even for 100+ message chats.",
   },
   {
-    q: "Can I save my Google AI Studio chat to Obsidian or Notion?",
-    a: "Yes — export as Markdown (.md) and paste it directly into Obsidian, Notion, Roam Research, Logseq, or any app that supports Markdown.",
+    q: "Can I save my chat to Obsidian or Notion?",
+    a: "Yes, use 'Copy as Markdown' and paste directly. Formatting, code blocks, and tables are preserved.",
   },
   {
-    q: "How do I save or download my Google AI Studio chat history?",
-    a: "Install the extension, open any conversation in Google AI Studio (aistudio.google.com), click the extension icon, and choose PDF, Markdown, or JSON. Your chat downloads instantly.",
+    q: "How do I save or download my chat history?",
+    a: "Open any chat, click the extension, choose PDF/Markdown/JSON, then click Export Now.",
   },
   {
-    q: "Does it work with Gemini 2.0, 2.5 Pro, 3 Flash, and Gemini 3.1 Pro in AI Studio?",
-    a: "Yes — it works with all Gemini models available inside Google AI Studio, including Gemini 1.5 Pro, Gemini 2.0 Flash, Gemini 2.5 Pro, Gemini 3 Flash, Gemini 3.1 Pro, Gemini 3.1 Flash, and all other models available in your AI Studio account.",
+    q: "Does it work with GPT-4o, Gemini 2.5 Pro, and AI Studio models?",
+    a: "Yes, it works with all current models on ChatGPT, Gemini, and AI Studio, including reasoning/thinking modes.",
   },
   {
-    q: "Does it work with Gemini thinking/reasoning mode in AI Studio?",
-    a: "Yes. Thinking-mode outputs are fully captured in the export.",
+    q: "Does it work with thinking/reasoning mode?",
+    a: "Yes, both ChatGPT reasoning and Gemini thinking traces are captured if visible in the UI.",
   },
   {
-    q: "What's the difference between PDF and Markdown export for AI Studio chats?",
-    a: "PDF preserves the visual layout with dark mode styling, great for sharing or archiving. Markdown exports clean, structured text you can edit in any markdown tool like Obsidian or VS Code.",
+    q: "What's the difference between PDF and Markdown export?",
+    a: "PDF is a formatted document for sharing/printing. Markdown is plain text with formatting for editing in notes apps.",
   },
 ];
 

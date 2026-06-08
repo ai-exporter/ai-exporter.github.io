@@ -18,12 +18,12 @@ const Hero = () => {
 
         {/* Headline */}
         <h1 className="fade-in-up mx-auto max-w-4xl text-4xl font-extrabold leading-[1.1] tracking-tight text-foreground sm:text-5xl md:text-6xl lg:text-7xl">
-          Export Google AI Studio Conversations <span className="text-gradient-primary">Beautifully.</span>
+          Export AI Conversations <span className="text-gradient-primary">Beautifully.</span>
         </h1>
 
         {/* Sub-headline */}
         <p className="fade-in-up mx-auto mt-6 max-w-2xl text-lg text-muted-foreground md:text-xl">
-          One click to save any Google AI Studio chat as a perfectly formatted PDF, Markdown, or JSON file. Download and keep your AI conversations locally — <strong className="text-foreground">fully private, no servers, no cloud.</strong>
+          One click to save any ChatGPT, Gemini, or Google AI Studio chat as a perfectly formatted PDF, Markdown, or JSON file. Download and keep your AI conversations locally — <strong className="text-foreground">fully private, no servers, no cloud.</strong>
         </p>
 
         {/* CTAs */}
@@ -52,7 +52,7 @@ const Hero = () => {
           <div className="glow-primary rounded-2xl overflow-hidden shadow-2xl">
             <img
               src="/assets/extension-screenshot-placeholder.png"
-              alt="Google AI Studio Chat Exporter extension popup showing PDF, Markdown, and JSON export options with dark mode toggle and progress bar"
+              alt="Chat Exporter extension popup showing PDF, Markdown, and JSON export options with dark mode toggle and progress bar"
               className="w-full h-auto"
               loading="lazy"
               width={800}

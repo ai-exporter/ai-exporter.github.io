@@ -19,7 +19,7 @@ const features = [
   {
     icon: Moon,
     title: "Dark Mode PDF",
-    description: "Export PDFs with a dark background and light text that matches AI Studio's aesthetic. Code blocks, headers, all tuned.",
+    description: "Export PDFs with a dark background and light text that matches your chat's aesthetic. Code blocks, headers, all tuned.",
   },
   {
     icon: Lock,
@@ -29,7 +29,7 @@ const features = [
   {
     icon: ScrollText,
     title: "Full Conversation Capture",
-    description: "AI Studio uses virtual rendering. The extension performs an intelligent multi-pass scroll to capture every turn — even in 100+ message chats.",
+    description: "ChatGPT, Gemini and AI Studio use virtual rendering. The extension performs an intelligent multi-pass scroll to capture every turn — even in 100+ message chats.",
   },
 ];
 
@@ -42,7 +42,7 @@ const Features = () => {
             Everything you need to keep your AI work.
           </h2>
           <p className="mt-4 text-muted-foreground">
-            <strong className="text-foreground">Google AI Studio Chat Exporter</strong> is a free Chrome extension that exports Google AI Studio conversations to PDF, Markdown, and JSON files. All processing happens locally in the browser — no data is sent to any server.
+            <strong className="text-foreground">Chat Exporter</strong> is a free Chrome extension that exports ChatGPT, Gemini, and Google AI Studio conversations to PDF, Markdown, and JSON files. All processing happens locally in the browser — no data is sent to any server.
           </p>
         </div>
 

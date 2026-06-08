@@ -4,8 +4,8 @@ const steps = [
   {
     num: "1",
     icon: ExternalLink,
-    title: "Open AI Studio",
-    description: "Navigate to any conversation in Google AI Studio (aistudio.google.com).",
+    title: "Open Chat",
+    description: "Navigate to any conversation in ChatGPT, Gemini, or Google AI Studio.",
   },
   {
     num: "2",

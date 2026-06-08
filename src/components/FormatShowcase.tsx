@@ -13,7 +13,7 @@ const FormatShowcase = () => {
               <h3 className="mb-1 text-xl font-bold text-foreground">📄 PDF</h3>
               <p className="mb-4 text-sm text-muted-foreground">Beautiful, shareable, ready to send.</p>
               <div className="rounded-lg bg-background p-4 text-xs font-mono">
-                <p className="mb-2 font-bold text-primary">Gemini 3.1 Pro</p>
+                <p className="mb-2 font-bold text-primary">ChatGPT / Gemini</p>
                 <p className="mb-2 text-foreground/80">Here's a Python function that handles pagination efficiently:</p>
                 <div className="rounded bg-code p-3 text-foreground/70">
                   <code>def paginate(items, page=1, size=20):</code><br />
@@ -34,7 +34,7 @@ const FormatShowcase = () => {
                 <p className="text-primary">### User</p>
                 <p>How do I handle API rate limits?</p>
                 <p className="my-1 text-foreground/20">---</p>
-                <p className="text-primary">### Gemini 3.1 Pro</p>
+                <p className="text-primary">### ChatGPT / Gemini</p>
                 <p>Implement exponential backoff with</p>
                 <p>jitter. Here's a pattern...</p>
               </div>

@@ -8,9 +8,9 @@ const SITE_URL = "https://aistudio-chat-exporter.vercel.app";
 
 export const metadata: Metadata = {
   title:
-    "Export Google AI Studio Chats — Save to PDF, Markdown & JSON | Free Chrome Extension",
+    "Chat Exporter — Save ChatGPT, Gemini & AI Studio chats to PDF, Markdown & JSON",
   description:
-    "Free Chrome extension to save and download Google AI Studio conversations. Export chats to PDF, Markdown (.md), or JSON — privately. No servers, no cloud, no account required.",
+    "Free Chrome extension to save and download ChatGPT, Gemini, and Google AI Studio conversations. Export chats to PDF, Markdown (.md), or JSON — privately. No servers, no cloud, no account required.",
   authors: [{ name: "Rajat Jain" }],
   metadataBase: new URL(SITE_URL),
   alternates: { canonical: "/" },
@@ -19,26 +19,26 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title:
-      "Export Google AI Studio Chats — Save to PDF, Markdown & JSON | Free Chrome Extension",
+      "Chat Exporter — Save ChatGPT, Gemini & AI Studio chats to PDF, Markdown & JSON",
     description:
-      "Free Chrome extension to save and download Google AI Studio conversations. PDF, Markdown, JSON. Fully private, no servers.",
+      "Free Chrome extension to save and download ChatGPT, Gemini, and Google AI Studio conversations. PDF, Markdown, JSON. Fully private, no servers.",
     type: "website",
     url: "/",
-    siteName: "AI Studio Chat Exporter",
+    siteName: "Chat Exporter",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Google AI Studio Chat Exporter — export conversations to PDF, Markdown, and JSON",
+        alt: "Chat Exporter — export conversations to PDF, Markdown, and JSON",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Google AI Studio Chat Exporter",
+    title: "Chat Exporter",
     description:
-      "Export Google AI Studio conversations to PDF, Markdown, or JSON. Free, private, no account.",
+      "Export ChatGPT, Gemini, and Google AI Studio conversations to PDF, Markdown, or JSON. Free, private, no account.",
     images: ["/og-image.png"],
   },
   icons: {
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
 const softwareAppSchema = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
-  name: "Google AI Studio Chat Exporter",
+  name: "Chat Exporter",
   applicationCategory: "BrowserApplication",
   operatingSystem: "Chrome",
   browserRequirements: "Requires Google Chrome browser",
@@ -65,7 +65,7 @@ const softwareAppSchema = {
   datePublished: "2026-03-26",
   dateModified: new Date().toISOString().split("T")[0],
   description:
-    "Free Chrome extension to export Google AI Studio conversations to PDF, Markdown, or JSON. 100% local processing, no data upload.",
+    "Free Chrome extension to export ChatGPT, Gemini, and Google AI Studio conversations to PDF, Markdown, or JSON. 100% local processing, no data upload.",
   featureList: [
     "Export to PDF with dark mode support",
     "Export to Markdown — paste into Obsidian, Notion, or any editor",
@@ -92,26 +92,26 @@ const faqSchema = {
   mainEntity: [
     {
       "@type": "Question",
-      name: "Does Google AI Studio Chat Exporter send my conversations to any server?",
+      name: "Does Chat Exporter send my conversations to any server?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "No. All processing happens locally inside your browser. Your conversations never leave your device.",
+        text: "No. Everything runs locally in your browser. No data is uploaded, no API calls are made, and no analytics are tracked.",
       },
     },
     {
       "@type": "Question",
-      name: "Which formats can I export Google AI Studio chats to?",
+      name: "Which formats can I export chats to?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "PDF, Markdown (.md), and JSON. You can also copy the entire conversation as Markdown directly to your clipboard.",
+        text: "PDF, Markdown, and JSON. PDF is best for sharing, Markdown for notes apps like Obsidian/Notion, JSON for backups and scripts.",
       },
     },
     {
       "@type": "Question",
-      name: "Does it work with all Google AI Studio models?",
+      name: "Does it work with ChatGPT, Gemini, and Google AI Studio?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes — Gemini 1.5 Pro, Gemini 2.0 Flash, Gemini 2.5 Pro, Gemini 3 Flash, Gemini 3.1 Pro, Gemini 3.1 Flash, and all other models available in Google AI Studio.",
+        text: "Yes. It works on chatgpt.com, chat.openai.com, gemini.google.com, and aistudio.google.com.",
       },
     },
     {
@@ -119,7 +119,7 @@ const faqSchema = {
       name: "Is the extension free?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes, completely free. No subscription, no account, no ads.",
+        text: "Yes, 100% free with no limits, no account, and no paywall.",
       },
     },
     {
@@ -127,47 +127,47 @@ const faqSchema = {
       name: "Can I export very long conversations?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. The extension uses a smart multi-pass scroll strategy to capture all turns even in 100+ message conversations that use virtual rendering.",
+        text: "Yes. The extension auto-scrolls and captures the full history, even for 100+ message chats.",
       },
     },
     {
       "@type": "Question",
-      name: "Can I save my Google AI Studio chat to Obsidian or Notion?",
+      name: "Can I save my chat to Obsidian or Notion?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes — export as Markdown (.md) and paste it directly into Obsidian, Notion, Roam Research, Logseq, or any app that supports Markdown.",
+        text: "Yes, use 'Copy as Markdown' and paste directly. Formatting, code blocks, and tables are preserved.",
       },
     },
     {
       "@type": "Question",
-      name: "How do I save or download my Google AI Studio chat history?",
+      name: "How do I save or download my chat history?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Install the extension, open any conversation in Google AI Studio (aistudio.google.com), click the extension icon, and choose PDF, Markdown, or JSON. Your chat downloads instantly.",
+        text: "Open any chat, click the extension, choose PDF/Markdown/JSON, then click Export Now.",
       },
     },
     {
       "@type": "Question",
-      name: "Does it work with Gemini 2.0, 2.5 Pro, 3 Flash, and Gemini 3.1 Pro in AI Studio?",
+      name: "Does it work with GPT-4o, Gemini 2.5 Pro, and AI Studio models?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes — it works with all Gemini models available inside Google AI Studio, including Gemini 1.5 Pro, Gemini 2.0 Flash, Gemini 2.5 Pro, Gemini 3 Flash, Gemini 3.1 Pro, Gemini 3.1 Flash, and all other models available in your AI Studio account.",
+        text: "Yes, it works with all current models on ChatGPT, Gemini, and AI Studio, including reasoning/thinking modes.",
       },
     },
     {
       "@type": "Question",
-      name: "Does it work with Gemini thinking/reasoning mode in AI Studio?",
+      name: "Does it work with thinking/reasoning mode?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. Thinking-mode outputs are fully captured in the export.",
+        text: "Yes, both ChatGPT reasoning and Gemini thinking traces are captured if visible in the UI.",
       },
     },
     {
       "@type": "Question",
-      name: "What's the difference between PDF and Markdown export for AI Studio chats?",
+      name: "What's the difference between PDF and Markdown export?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "PDF preserves the visual layout with dark mode styling, great for sharing or archiving. Markdown exports clean, structured text you can edit in any markdown tool like Obsidian or VS Code.",
+        text: "PDF is a formatted document for sharing/printing. Markdown is plain text with formatting for editing in notes apps.",
       },
     },
   ],
@@ -176,9 +176,9 @@ const faqSchema = {
 const webPageSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  name: "Google AI Studio Chat Exporter",
+  name: "Chat Exporter",
   description:
-    "Free Chrome extension to save and export Google AI Studio conversations to PDF, Markdown, or JSON.",
+    "Free Chrome extension to save and export ChatGPT, Gemini, and Google AI Studio conversations to PDF, Markdown, or JSON.",
   url: SITE_URL,
   inLanguage: "en-US",
   dateModified: new Date().toISOString().split("T")[0],
@@ -201,15 +201,15 @@ const personSchema = {
 const howToSchema = {
   "@context": "https://schema.org",
   "@type": "HowTo",
-  name: "How to Export Google AI Studio Conversations",
+  name: "How to Export AI Conversations",
   description:
-    "Export any Google AI Studio chat to PDF, Markdown, or JSON in three steps using the free Chat Exporter Chrome extension.",
+    "Export any ChatGPT, Gemini, or Google AI Studio chat to PDF, Markdown, or JSON in three steps using the free Chat Exporter Chrome extension.",
   step: [
     {
       "@type": "HowToStep",
       position: 1,
-      name: "Open AI Studio",
-      text: "Navigate to any conversation in Google AI Studio (aistudio.google.com).",
+      name: "Open Chat",
+      text: "Navigate to any conversation in ChatGPT, Gemini, or Google AI Studio.",
     },
     {
       "@type": "HowToStep",
@@ -234,7 +234,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" dir="ltr">
+    <html lang="en" dir="ltr" suppressHydrationWarning>
       <head>
         {/* Font preconnect */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -273,9 +273,9 @@ export default function RootLayout({
 
         {/* Noscript fallback — keyword-rich content for crawlers */}
         <noscript>
-          <h1>Google AI Studio Chat Exporter — Free Chrome Extension</h1>
+          <h1>Chat Exporter — Free Chrome Extension</h1>
           <p>
-            Save and export your Google AI Studio conversations to PDF,
+            Save and export your ChatGPT, Gemini, and Google AI Studio conversations to PDF,
             Markdown, or JSON. This free Chrome extension processes everything
             locally in your browser — no servers, no cloud, no account required.
           </p>
@@ -296,7 +296,7 @@ export default function RootLayout({
           </ul>
           <h2>Supported Models</h2>
           <p>
-            Works with all Gemini models in Google AI Studio: Gemini 1.5 Pro,
+            Works with all Gemini models in ChatGPT, Gemini, and Google AI Studio: Gemini 1.5 Pro,
             Gemini 2.0 Flash, Gemini 2.5 Pro, Gemini 3 Flash, Gemini 3.1 Pro,
             Gemini 3.1 Flash, and all future models.
           </p>
