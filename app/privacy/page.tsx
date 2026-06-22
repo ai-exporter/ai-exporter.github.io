@@ -17,13 +17,13 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       position: 1,
       name: "Home",
-      item: "https://aiexport.vercel.app/",
+      item: "https://ai-chat-exporter.github.io/",
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Privacy Policy",
-      item: "https://aiexport.vercel.app/privacy",
+      item: "https://ai-chat-exporter.github.io/privacy",
     },
   ],
 };
