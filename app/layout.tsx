@@ -52,6 +52,7 @@ export const metadata: Metadata = {
 
 /* ─── JSON-LD Structured Data ───────────────────────────────────────── */
 
+
 const softwareAppSchema = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
