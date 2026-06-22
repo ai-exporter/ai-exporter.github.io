@@ -11,7 +11,7 @@ const steps = [
     num: "2",
     icon: MousePointerClick,
     title: "Click the Extension",
-    description: "Click the Chat Exporter icon in your Chrome toolbar. Pick your format and options.",
+    description: "Click the AI Chat Exporter icon in your Chrome toolbar. Pick your format and options.",
   },
   {
     num: "3",

@@ -6,9 +6,9 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 border-b border-foreground/5 bg-background/70 backdrop-blur-xl">
       <div className="container flex h-16 items-center justify-between">
         <a href="/" className="flex items-center gap-2.5">
-          <img src="/assets/logo-placeholder.png" alt="Chat Exporter logo" className="h-8 w-8 rounded-lg" width={32} height={32} />
+          <img src="/assets/logo-placeholder.png" alt="AI Chat Exporter logo" className="h-8 w-8 rounded-lg" width={32} height={32} />
           <span className="text-base font-semibold tracking-tight text-foreground whitespace-nowrap">
-            Chat Exporter
+            AI Chat Exporter
           </span>
         </a>
 

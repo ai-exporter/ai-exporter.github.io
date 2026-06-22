@@ -8,7 +8,7 @@ const SITE_URL = "https://aiexport.vercel.app";
 
 export const metadata: Metadata = {
   title:
-    "Chat Exporter: Save ChatGPT, Gemini & AI Studio chats to PDF, Markdown & JSON",
+    "AI Chat Exporter: Save ChatGPT, Gemini & AI Studio chats to PDF, Markdown & JSON",
   description:
     "Free Chrome extension to save and download ChatGPT, Gemini, and Google AI Studio conversations. Export chats to PDF, Markdown (.md), or JSON — privately. No servers, no cloud, no account required.",
   authors: [{ name: "Rajat Jain" }],
@@ -19,24 +19,24 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title:
-      "Chat Exporter: Save ChatGPT, Gemini & AI Studio chats to PDF, Markdown & JSON",
+      "AI Chat Exporter: Save ChatGPT, Gemini & AI Studio chats to PDF, Markdown & JSON",
     description:
       "Free Chrome extension to save and download ChatGPT, Gemini, and Google AI Studio conversations. PDF, Markdown, JSON. Fully private, no servers.",
     type: "website",
     url: "/",
-    siteName: "Chat Exporter",
+    siteName: "AI Chat Exporter",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Chat Exporter — export conversations to PDF, Markdown, and JSON",
+        alt: "AI Chat Exporter — export conversations to PDF, Markdown, and JSON",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Chat Exporter",
+    title: "AI Chat Exporter",
     description:
       "Export ChatGPT, Gemini, and Google AI Studio conversations to PDF, Markdown, or JSON. Free, private, no account.",
     images: ["/og-image.png"],
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     icon: "/favicon.ico",
   },
   other: {
-    "apple-mobile-web-app-title": "Chat Exporter",
+    "apple-mobile-web-app-title": "AI Chat Exporter",
     "theme-color": "#111216",
   },
 };
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
 const softwareAppSchema = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
-  name: "Chat Exporter",
+  name: "AI Chat Exporter",
   applicationCategory: "BrowserApplication",
   operatingSystem: "Chrome",
   browserRequirements: "Requires Google Chrome browser",
@@ -92,7 +92,7 @@ const faqSchema = {
   mainEntity: [
     {
       "@type": "Question",
-      name: "Does Chat Exporter send my conversations to any server?",
+      name: "Does AI Chat Exporter send my conversations to any server?",
       acceptedAnswer: {
         "@type": "Answer",
         text: "No. Everything runs locally in your browser. No data is uploaded, no API calls are made, and no analytics are tracked.",
@@ -176,7 +176,7 @@ const faqSchema = {
 const webPageSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  name: "Chat Exporter",
+  name: "AI Chat Exporter",
   description:
     "Free Chrome extension to save and export ChatGPT, Gemini, and Google AI Studio conversations to PDF, Markdown, or JSON.",
   url: SITE_URL,
@@ -203,7 +203,7 @@ const howToSchema = {
   "@type": "HowTo",
   name: "How to Export AI Conversations",
   description:
-    "Export any ChatGPT, Gemini, or Google AI Studio chat to PDF, Markdown, or JSON in three steps using the free Chat Exporter Chrome extension.",
+    "Export any ChatGPT, Gemini, or Google AI Studio chat to PDF, Markdown, or JSON in three steps using the free AI Chat Exporter Chrome extension.",
   step: [
     {
       "@type": "HowToStep",
@@ -215,7 +215,7 @@ const howToSchema = {
       "@type": "HowToStep",
       position: 2,
       name: "Click the Extension",
-      text: "Click the Chat Exporter icon in your Chrome toolbar. Pick your format and options.",
+      text: "Click the AI Chat Exporter icon in your Chrome toolbar. Pick your format and options.",
     },
     {
       "@type": "HowToStep",
@@ -273,7 +273,7 @@ export default function RootLayout({
 
         {/* Noscript fallback — keyword-rich content for crawlers */}
         <noscript>
-          <h1>Chat Exporter — Free Chrome Extension</h1>
+          <h1>AI Chat Exporter — Free Chrome Extension</h1>
           <p>
             Save and export your ChatGPT, Gemini, and Google AI Studio conversations to PDF,
             Markdown, or JSON. This free Chrome extension processes everything

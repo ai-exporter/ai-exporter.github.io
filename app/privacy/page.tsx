@@ -3,9 +3,9 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy: Chat Exporter",
+  title: "Privacy Policy: AI Chat Exporter",
   description:
-    "Privacy policy for Google AI Studio Chat Exporter. All data is processed locally in your browser. No servers, no tracking, no data collection.",
+    "Privacy policy for AI Chat Exporter. All data is processed locally in your browser. No servers, no tracking, no data collection.",
   alternates: { canonical: "/privacy" },
 };
 

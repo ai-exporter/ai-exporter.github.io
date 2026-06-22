@@ -42,7 +42,7 @@ const Features = () => {
             Everything you need to keep your AI work.
           </h2>
           <p className="mt-4 text-muted-foreground">
-            <strong className="text-foreground">Chat Exporter</strong> is a free Chrome extension that exports ChatGPT, Gemini, and Google AI Studio conversations to PDF, Markdown, and JSON files. All processing happens locally in the browser — no data is sent to any server.
+            <strong className="text-foreground">AI Chat Exporter</strong> is a free Chrome extension that exports ChatGPT, Gemini, and Google AI Studio conversations to PDF, Markdown, and JSON files. All processing happens locally in the browser — no data is sent to any server.
           </p>
         </div>
 

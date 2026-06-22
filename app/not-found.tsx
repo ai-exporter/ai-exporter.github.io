@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Page Not Found — Google AI Studio Chat Exporter",
+  title: "Page Not Found — AI Chat Exporter",
   robots: { index: false, follow: false },
 };
 
