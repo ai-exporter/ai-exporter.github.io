@@ -4,7 +4,7 @@ import Providers from "@/components/Providers";
 
 /* ─── SEO Metadata (replaces index.html <head>) ────────────────────── */
 
-const SITE_URL = "https://ai-chat-exporter.github.io";
+const SITE_URL = "https://ai-exporter.github.io";
 
 export const metadata: Metadata = {
   title:

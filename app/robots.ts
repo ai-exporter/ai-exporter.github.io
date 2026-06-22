@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: "/preview/",
     },
-    sitemap: "https://ai-chat-exporter.github.io/sitemap.xml",
+    sitemap: "https://ai-exporter.github.io/sitemap.xml",
   };
 }

@@ -17,13 +17,13 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       position: 1,
       name: "Home",
-      item: "https://ai-chat-exporter.github.io/",
+      item: "https://ai-exporter.github.io/",
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Privacy Policy",
-      item: "https://ai-chat-exporter.github.io/privacy",
+      item: "https://ai-exporter.github.io/privacy",
     },
   ],
 };
