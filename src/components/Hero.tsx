@@ -23,7 +23,7 @@ const Hero = () => {
 
         {/* Sub-headline */}
         <p className="fade-in-up mx-auto mt-6 max-w-2xl text-lg text-muted-foreground md:text-xl">
-          One click to save any ChatGPT, Gemini, or Google AI Studio chat as a perfectly formatted PDF, Markdown, or JSON file. Download and keep your AI conversations locally — <strong className="text-foreground">chat content stays private, no cloud, no accounts.</strong>
+          Save any ChatGPT, Gemini, or AI Studio chat as formatted PDF, Markdown, or JSON. Download locally — <strong className="text-foreground">chat content stays private, no cloud, no accounts.</strong>
         </p>
 
         {/* CTAs */}
