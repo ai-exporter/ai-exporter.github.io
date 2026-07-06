@@ -18,7 +18,7 @@ const Footer = () => {
           </div>
         </div>
         <p className="mt-6 text-center text-xs text-muted-foreground/70 max-w-xl mx-auto">
-          Save and export your ChatGPT, Gemini, and Google AI Studio conversations to PDF, Markdown, and JSON — 100% free, 100% private.
+          Save and export your ChatGPT, Gemini, and Google AI Studio conversations to PDF, Markdown, and JSON — 100% free. Your chat content stays private
         </p>
         <p className="mt-4 text-center text-xs text-muted-foreground">
           © 2025 AI Chat Exporter, made with ♥ by Rajat Jain.

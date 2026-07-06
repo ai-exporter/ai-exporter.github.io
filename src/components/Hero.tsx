@@ -23,7 +23,7 @@ const Hero = () => {
 
         {/* Sub-headline */}
         <p className="fade-in-up mx-auto mt-6 max-w-2xl text-lg text-muted-foreground md:text-xl">
-          One click to save any ChatGPT, Gemini, or Google AI Studio chat as a perfectly formatted PDF, Markdown, or JSON file. Download and keep your AI conversations locally — <strong className="text-foreground">fully private, no servers, no cloud.</strong>
+          One click to save any ChatGPT, Gemini, or Google AI Studio chat as a perfectly formatted PDF, Markdown, or JSON file. Download and keep your AI conversations locally — <strong className="text-foreground">chat content stays private, no cloud, no accounts.</strong>
         </p>
 
         {/* CTAs */}
@@ -44,7 +44,7 @@ const Hero = () => {
         {/* Trust line */}
         <p className="fade-in-up mt-8 flex items-center justify-center gap-3 text-sm text-muted-foreground">
           <Lock className="h-3.5 w-3.5" />
-          Local only · No data leaves your browser · No account required
+          Local only · Chat never leaves your browser · No account required
         </p>
 
         {/* Extension Screenshot */}
