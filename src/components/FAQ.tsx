@@ -6,7 +6,7 @@ import { ChevronDown } from "lucide-react";
 const faqs = [
   {
     q: "Does AI Chat Exporter send my conversations to any server?",
-    a: "No. Everything runs locally in your browser. No data is uploaded, no API calls are made, and no analytics are tracked.",
+    a: "No. Everything runs locally in your browser. Your conversations are never uploaded or sent anywhere. An optional anonymous uninstall survey opens in a new tab only if you choose to fill it out — no data is collected automatically.",
   },
   {
     q: "Which formats can I export chats to?",

@@ -96,7 +96,7 @@ const faqSchema = {
       name: "Does AI Chat Exporter send my conversations to any server?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "No. Everything runs locally in your browser. No data is uploaded, no API calls are made, and no analytics are tracked.",
+        text: "No. Everything runs locally in your browser. Your conversations are never uploaded or sent anywhere. An optional anonymous uninstall survey opens in a new tab only if you choose to fill it out — no data is collected automatically.",
       },
     },
     {

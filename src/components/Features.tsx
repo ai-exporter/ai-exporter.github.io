@@ -24,7 +24,7 @@ const features = [
   {
     icon: Lock,
     title: "100% Private",
-    description: "Private by Design No server, no API calls, no account. Your conversations are processed entirely in your browser and never leave your device. An anonymous uninstall survey (version number only) helps us improve that's it.",
+    description: "Private by Design — No server, no API calls, no account. Your conversations are processed entirely in your browser and never leave your device. An optional anonymous uninstall survey helps us improve — that's it.",
   },
   {
     icon: ScrollText,
