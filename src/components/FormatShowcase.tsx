@@ -1,14 +1,14 @@
 const FormatShowcase = () => {
   return (
-    <section id="formats" className="py-24 md:py-32">
-      <div className="container">
+    <section id="formats" className="py-24 md:py-32 relative">
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent via-primary/2 to-transparent" />
+      <div className="container relative">
         <h2 className="fade-in-up text-center text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
           Pick the format that fits your workflow.
         </h2>
 
         <div className="mt-16 grid gap-6 lg:grid-cols-3">
-          {/* PDF */}
-          <article className="fade-in-up glow-border-hover rounded-xl border border-foreground/[0.08] bg-card overflow-hidden">
+          <article className="card-premium">
             <div className="p-6">
               <h3 className="mb-1 text-xl font-bold text-foreground">📄 PDF</h3>
               <p className="mb-4 text-sm text-muted-foreground">Beautiful, shareable, ready to send.</p>
@@ -25,8 +25,7 @@ const FormatShowcase = () => {
             </div>
           </article>
 
-          {/* Markdown */}
-          <article className="fade-in-up glow-border-hover rounded-xl border border-foreground/[0.08] bg-card overflow-hidden" style={{ transitionDelay: "100ms" }}>
+          <article className="card-premium" style={{ transitionDelay: "100ms" }}>
             <div className="p-6">
               <h3 className="mb-1 text-xl font-bold text-foreground">📝 Markdown</h3>
               <p className="mb-4 text-sm text-muted-foreground">Perfect for pasting into Obsidian, Notion, or any Markdown editor.</p>
@@ -42,8 +41,7 @@ const FormatShowcase = () => {
             </div>
           </article>
 
-          {/* JSON */}
-          <article className="fade-in-up glow-border-hover rounded-xl border border-foreground/[0.08] bg-card overflow-hidden" style={{ transitionDelay: "200ms" }}>
+          <article className="card-premium" style={{ transitionDelay: "200ms" }}>
             <div className="p-6">
               <h3 className="mb-1 text-xl font-bold text-foreground">{"{ } "}JSON</h3>
               <p className="mb-4 text-sm text-muted-foreground">Use exported JSON to feed into Python scripts, analysis tools, or AI pipelines.</p>

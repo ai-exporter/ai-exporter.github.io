@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="border-t border-foreground/5 py-10">
+    <footer className="border-t border-foreground/5 py-12">
       <div className="container">
         <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
           <div>
@@ -10,23 +10,24 @@ const Footer = () => {
                 AI Chat Exporter
               </p>
             </div>
-            <p className="mt-3 text-sm text-muted-foreground">ChatGPT is a trademark of OpenAI. Gemini and Google AI Studio are trademarks of Google LLC. Not affiliated with or endorsed by OpenAI or Google LLC.</p>
+            <p className="mt-3 text-sm text-muted-foreground max-w-md">ChatGPT is a trademark of OpenAI. Gemini and Google AI Studios are trademarks of Google LLC. Not affiliated with or endorsed by OpenAI or Google LLC.</p>
           </div>
           <div className="flex gap-6 text-sm text-muted-foreground">
-            <a href="https://chromewebstore.google.com/detail/chat-exporter-for-google/pmccmopibnkjfmaddlloincblhcnmndd" className="transition-colors hover:text-foreground">Chrome Web Store</a>
-            <a href="/privacy" className="transition-colors hover:text-foreground">Privacy Policy</a>
+            <a href="https://chromewebstore.google.com/detail/chat-exporter-for-google/pmccmopibnkjfmaddlloincblhcnmndd" className="transition-colors hover:text-foreground relative after:absolute after:-bottom-0.5 after:left-0 after:h-px after:w-0 after:bg-primary after:transition-all after:duration-300 hover:after:w-full">Chrome Web Store</a>
+            <a href="/privacy" className="transition-colors hover:text-foreground relative after:absolute after:-bottom-0.5 after:left-0 after:h-px after:w-0 after:bg-primary after:transition-all after:duration-300 hover:after:w-full">Privacy Policy</a>
           </div>
         </div>
-        <p className="mt-6 text-center text-xs text-muted-foreground/70 max-w-xl mx-auto">
-          Save and export your ChatGPT, Gemini, and Google AI Studio conversations to PDF, Markdown, and JSON — 100% free. Your chat content stays private
-        </p>
-        <p className="mt-4 text-center text-xs text-muted-foreground">
-          © 2025 AI Chat Exporter, made with ♥ by Rajat Jain.
-        </p>
+        <div className="mt-8 pt-6 border-t border-foreground/5">
+          <p className="text-center text-xs text-muted-foreground/70 max-w-xl mx-auto">
+            Save and export your ChatGPT, Gemini, and Google AI Studio conversations to PDF, Markdown, and JSON — 100% free. Your chat content stays private
+          </p>
+          <p className="mt-3 text-center text-xs text-muted-foreground">
+            © 2025 AI Chat Exporter, made with ♥ by Rajat Jain.
+          </p>
+        </div>
       </div>
     </footer>
   );
 };
 
 export default Footer;
-

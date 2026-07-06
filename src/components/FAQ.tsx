@@ -59,7 +59,7 @@ const FAQ = () => {
           {faqs.map((f, i) => (
             <div
               key={i}
-              className="fade-in-up rounded-xl border border-foreground/[0.08] bg-card"
+              className="fade-in-up card-premium overflow-hidden"
               style={{ transitionDelay: `${i * 60}ms` }}
             >
               <button
@@ -68,14 +68,18 @@ const FAQ = () => {
               >
                 <span className="pr-4 text-sm font-medium text-foreground">{f.q}</span>
                 <ChevronDown
-                  className={`h-4 w-4 shrink-0 text-muted-foreground transition-transform ${open === i ? "rotate-180" : ""}`}
+                  className={`h-4 w-4 shrink-0 text-muted-foreground transition-all duration-300 ${open === i ? "rotate-180 text-primary" : ""}`}
                 />
               </button>
-              {open === i && (
+              <div
+                className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                  open === i ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+                }`}
+              >
                 <div className="px-5 pb-5 text-sm leading-relaxed text-muted-foreground">
                   {f.a}
                 </div>
-              )}
+              </div>
             </div>
           ))}
         </div>

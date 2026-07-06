@@ -35,8 +35,9 @@ const features = [
 
 const Features = () => {
   return (
-    <section id="features" className="py-24 md:py-32">
-      <div className="container">
+    <section id="features" className="py-24 md:py-32 relative">
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-primary/3 via-transparent to-transparent" />
+      <div className="container relative">
         <div className="fade-in-up mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
             Everything you need to keep your AI work.
@@ -50,10 +51,10 @@ const Features = () => {
           {features.map((f, i) => (
             <article
               key={f.title}
-              className="fade-in-up glow-border-hover group rounded-xl border border-foreground/[0.08] bg-card p-6"
+              className="card-premium p-6"
               style={{ transitionDelay: `${i * 80}ms` }}
             >
-              <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
+              <div className="icon-container mb-4 h-10 w-10">
                 <f.icon className="h-5 w-5 text-primary" />
               </div>
               <h3 className="mb-2 text-lg font-semibold text-foreground">{f.title}</h3>
