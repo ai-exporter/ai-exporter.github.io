@@ -82,8 +82,8 @@ export default function PrivacyPage() {
                 What is NOT Done
               </h2>
               <ul className="list-disc pl-5 space-y-1.5 marker:text-[#52525b]">
-                <li><strong className="font-semibold text-[#e4e4e7]">No Remote Transmission:</strong> No data is transmitted to any external server.</li>
-                <li><strong className="font-semibold text-[#e4e4e7]">No Analytics or Tracking:</strong> No user behavior analytics, event logs, or telemetry are collected.</li>
+                <li><strong className="font-semibold text-[#e4e4e7]">No Analytics or Tracking:</strong> No user behavior analytics, event logs, or telemetry are collected during normal use.</li>
+                <li><strong className="font-semibold text-[#e4e4e7]">Uninstall Survey:</strong> When you uninstall the extension, a browser tab opens with an optional anonymous survey hosted by Typeform. No extension data is included in the request. You are never required to fill it out.</li>
                 <li><strong className="font-semibold text-[#e4e4e7]">No User Accounts:</strong> No user accounts or personal profiles are created.</li>
                 <li><strong className="font-semibold text-[#e4e4e7]">No Long-term Storage:</strong> No conversation content is cached or stored beyond the active export session.</li>
                 <li><strong className="font-semibold text-[#e4e4e7]">No Third-Party Scripts:</strong> No third-party tracking, advertising, or analysis scripts are included.</li>
@@ -101,6 +101,15 @@ export default function PrivacyPage() {
                 <li><strong className="font-semibold text-[#e4e4e7]">storage</strong> — Used to persist your preferred settings locally (e.g., dark/light mode preference).</li>
                 <li><strong className="font-semibold text-[#e4e4e7]">Host Permissions</strong> — Permanent host permission is limited only to <code className="text-[#e4e4e7]">aistudio.google.com</code> (required to pre-inject a helper script at document start to securely access AI Studio's internal conversation metadata). For ChatGPT and Gemini, tab access is granted strictly on-demand via the temporary <code className="text-[#e4e4e7]">activeTab</code> permission when you open the popup.</li>
               </ul>
+            </section>
+
+            <section>
+              <h2 className="text-[15px] font-semibold text-[#e4e4e7] mb-3">
+                Limited Use Disclosure
+              </h2>
+              <p>
+                The use of information received from Google APIs will adhere to the Chrome Web Store User Data Policy, including the Limited Use requirements.
+              </p>
             </section>
 
             <section>
