@@ -5,17 +5,15 @@ const Footer = () => {
         <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
           <div>
             <div className="flex items-center gap-2 mb-1">
-              <div className="h-6 w-6 rounded-md border-[1.5px] border-[#0F0F0F] bg-[#E5D9F2] flex items-center justify-center text-[10px] font-bold shadow-[2px_2px_0_0_#0F0F0F]">
-                AE
-              </div>
-              <p className="text-base font-semibold tracking-tight whitespace-nowrap font-serif">
+              <img src="/assets/logo-placeholder.png" alt="AI Chat Exporter logo" className="h-6 w-6" width={24} height={24} />
+              <p className="text-xl font-semibold tracking-tight whitespace-nowrap font-serif">
                 AI Chat Exporter
               </p>
             </div>
             <p className="mt-3 text-sm text-[#0F0F0F]/60 max-w-md">ChatGPT is a trademark of OpenAI. Gemini and Google AI Studio are trademarks of Google LLC. Not affiliated with or endorsed by OpenAI or Google LLC.</p>
           </div>
           <div className="flex gap-6 text-sm text-[#0F0F0F]/70">
-            <a href="https://chromewebstore.google.com/detail/chat-exporter-for-google/pmccmopibnkjfmaddlloincblhcnmndd" className="transition-opacity hover:opacity-60">Chrome Web Store</a>
+            <a href="https://chromewebstore.google.com/detail/ai-chat-exporter-save-ai/pmccmopibnkjfmaddlloincblhcnmndd" className="transition-opacity hover:opacity-60">Chrome Web Store</a>
             <a href="/privacy" className="transition-opacity hover:opacity-60">Privacy Policy</a>
           </div>
         </div>

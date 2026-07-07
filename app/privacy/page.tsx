@@ -38,7 +38,7 @@ export default function PrivacyPage() {
       <div className="min-h-screen bg-[#FAF9F6] text-[#0F0F0F] flex flex-col">
         <Navbar />
         <main className="flex-1 mx-auto max-w-3xl px-6 pt-32 pb-24 sm:pt-40 sm:pb-32 w-full">
-          <h1 className="text-3xl font-bold tracking-tight mb-2 font-serif">
+          <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-2 font-serif">
             Privacy Policy
           </h1>
           <p className="text-sm text-[#0F0F0F]/50 mb-12">
@@ -47,7 +47,7 @@ export default function PrivacyPage() {
 
           <div className="space-y-8 text-[15px] leading-relaxed text-[#0F0F0F]/70">
             <section>
-              <h2 className="text-[15px] font-semibold text-[#0F0F0F] mb-3 font-serif">
+              <h2 className="text-lg font-semibold text-[#0F0F0F] mb-3 font-serif">
                 What Data is Accessed
               </h2>
               <p>
@@ -66,7 +66,7 @@ export default function PrivacyPage() {
             </section>
 
             <section>
-              <h2 className="text-[15px] font-semibold text-[#0F0F0F] mb-3 font-serif">
+              <h2 className="text-lg font-semibold text-[#0F0F0F] mb-3 font-serif">
                 How it is Used
               </h2>
               <p>
@@ -78,7 +78,7 @@ export default function PrivacyPage() {
             </section>
 
             <section>
-              <h2 className="text-[15px] font-semibold text-[#0F0F0F] mb-3 font-serif">
+              <h2 className="text-lg font-semibold text-[#0F0F0F] mb-3 font-serif">
                 What is NOT Done
               </h2>
               <ul className="list-disc pl-5 space-y-1.5 marker:text-[#0F0F0F]/30">
@@ -91,7 +91,7 @@ export default function PrivacyPage() {
             </section>
 
             <section>
-              <h2 className="text-[15px] font-semibold text-[#0F0F0F] mb-3 font-serif">
+              <h2 className="text-lg font-semibold text-[#0F0F0F] mb-3 font-serif">
                 Permissions Used
               </h2>
               <ul className="list-disc pl-5 space-y-1.5 marker:text-[#0F0F0F]/30">
@@ -104,7 +104,7 @@ export default function PrivacyPage() {
             </section>
 
             <section>
-              <h2 className="text-[15px] font-semibold text-[#0F0F0F] mb-3 font-serif">
+              <h2 className="text-lg font-semibold text-[#0F0F0F] mb-3 font-serif">
                 Limited Use Disclosure
               </h2>
               <p>
@@ -113,7 +113,7 @@ export default function PrivacyPage() {
             </section>
 
             <section>
-              <h2 className="text-[15px] font-semibold text-[#0F0F0F] mb-3 font-serif">
+              <h2 className="text-lg font-semibold text-[#0F0F0F] mb-3 font-serif">
                 Contact
               </h2>
               <p>

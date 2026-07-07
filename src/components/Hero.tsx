@@ -27,9 +27,9 @@ const Hero = () => {
             </div>
 
             {/* CTAs */}
-            <div className="mt-10 flex flex-col items-start gap-4 sm:flex-row">
+            <div className="mt-10 flex flex-col sm:flex-row items-center gap-4">
               <a
-                href="https://chromewebstore.google.com/detail/chat-exporter-for-google/pmccmopibnkjfmaddlloincblhcnmndd"
+                href="https://chromewebstore.google.com/detail/ai-chat-exporter-save-ai/pmccmopibnkjfmaddlloincblhcnmndd"
                 className="inline-flex items-center gap-2.5 rounded-lg border-[1.5px] border-[#0F0F0F] bg-[#D1E9D2] px-6 py-3 text-base font-semibold shadow-[4px_4px_0_0_#0F0F0F] transition-all hover:shadow-[5px_5px_0_0_#0F0F0F] hover:translate-x-[-1px] hover:translate-y-[-1px]"
               >
                 <img src="/assets/web-store-logo.png" alt="Chrome Web Store" className="h-7 w-7 mr-1" />
