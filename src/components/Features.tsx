@@ -73,18 +73,9 @@ const Features = () => {
           {features.map((f, i) => (
             <div
               key={f.title}
-              className={`rounded-xl border-[1.5px] border-[#0F0F0F] bg-white p-6 shadow-[4px_4px_0_0_#0F0F0F] transition-all hover:shadow-[6px_6px_0_0_#0F0F0F] hover:translate-x-[-2px] hover:translate-y-[-2px] ${
-                i === 4 ? "relative" : ""
-              }`}
+              className={`rounded-xl border-[1.5px] border-[#0F0F0F] bg-white p-6 shadow-[4px_4px_0_0_#0F0F0F] transition-all hover:shadow-[6px_6px_0_0_#0F0F0F] hover:translate-x-[-2px] hover:translate-y-[-2px]`}
             >
-              {i === 4 && (
-                <div className="pointer-events-none absolute -top-8 -right-8 hidden lg:block">
-                  <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10 40 C10 15 30 5 40 5 C50 5 70 15 70 40 C70 65 50 75 40 75 C30 75 10 65 10 40" stroke="#0F0F0F" strokeWidth="1.2" fill="none" strokeLinecap="round" opacity="0.35"/>
-                    <path d="M22 32 L14 28 L18 38" stroke="#0F0F0F" strokeWidth="1.2" fill="none" strokeLinecap="round" strokeLinejoin="round" opacity="0.35"/>
-                  </svg>
-                </div>
-              )}
+
               <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-lg border-[1.5px] border-[#0F0F0F] bg-[#E5D9F2] shadow-[2px_2px_0_0_#0F0F0F]">
                 {f.icon}
               </div>
