@@ -24,7 +24,7 @@ const Footer = () => {
             Save and export your ChatGPT, Gemini, and Google AI Studio conversations to PDF, Markdown, and JSON — 100% free. Your chat content stays private
           </p>
           <p className="mt-3 text-center text-xs text-[#0F0F0F]/50">
-            © 2026 AI Chat Exporter, made with ♥ by Rajat Jain.
+            © 2026 AI Chat Exporter, made with ♥ by Rajat Jain. <span className="inline-block mx-1">·</span> v1.0
           </p>
         </div>
       </div>

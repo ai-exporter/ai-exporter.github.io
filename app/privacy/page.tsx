@@ -7,6 +7,29 @@ export const metadata: Metadata = {
   description:
     "Privacy policy for AI Chat Exporter. All data is processed locally in your browser. No servers, no tracking, no data collection.",
   alternates: { canonical: "/privacy" },
+  openGraph: {
+    title: "Privacy Policy: AI Chat Exporter",
+    description:
+      "Your conversations stay on your device. No servers, no cloud, no data collection. Read the full privacy policy.",
+    type: "website",
+    url: "/privacy",
+    siteName: "AI Chat Exporter",
+    images: [
+      {
+        url: "/og-image.svg",
+        width: 1200,
+        height: 630,
+        alt: "AI Chat Exporter — Privacy Policy",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Privacy Policy: AI Chat Exporter",
+    description:
+      "Your conversations stay on your device. No servers, no cloud, no data collection.",
+    images: ["/og-image.svg"],
+  },
 };
 
 const breadcrumbSchema = {
@@ -37,7 +60,7 @@ export default function PrivacyPage() {
       />
       <div className="min-h-screen bg-[#FAF9F6] text-[#0F0F0F] flex flex-col">
         <Navbar />
-        <main className="flex-1 mx-auto max-w-3xl px-6 pt-32 pb-24 sm:pt-40 sm:pb-32 w-full">
+        <main id="main-content" className="flex-1 mx-auto max-w-3xl px-6 pt-32 pb-24 sm:pt-40 sm:pb-32 w-full">
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-2 font-serif">
             Privacy Policy
           </h1>

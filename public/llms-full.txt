@@ -1,0 +1,97 @@
+# AI Chat Exporter — Full Site Context
+
+## Site Overview
+
+AI Chat Exporter is a free Chrome extension that saves and exports ChatGPT, Gemini, and Google AI Studio conversations to PDF, Markdown, and JSON files. All processing is done locally in the browser — no data is ever sent to any server. No account is required.
+
+URL: https://ai-exporter.github.io
+Developer: Rajat Jain (rajatjain.dev@gmail.com)
+Chrome Web Store: https://chromewebstore.google.com/detail/ai-chat-exporter-save-ai/pmccmopibnkjfmaddlloincblhcnmndd
+
+## Key Differentiators
+
+- 100% local processing — your conversations never leave your device
+- Supports ChatGPT, Gemini, and Google AI Studio
+- Three export formats: PDF (with dark mode), Markdown, JSON
+- No account, no cloud, no servers
+- Free with no limits or paywalls
+- Auto-generated filenames
+- Full conversation capture with smart scrolling
+
+## Features
+
+1. Three Export Formats: Export to PDF, Markdown, or JSON. Each format is optimized for its use case.
+2. Copy as Markdown: Skip the file entirely. One click copies the full conversation as Markdown — paste straight into Notion, Obsidian, or GitHub.
+3. Auto-Title Filenames: Files are named from your first message. No more "untitled-export-37.pdf".
+4. Dark Mode PDF: Export PDFs with a dark background and light text that matches your chat's aesthetic. Code blocks, headers, all tuned.
+5. Private by Design: No server, no API calls, no account. Your conversations stay on your device. An anonymous uninstall survey (via Chrome's API) is optional — no data is sent otherwise.
+6. Full Conversation Capture: ChatGPT, Gemini and AI Studio use virtual rendering. The extension performs an intelligent multi-pass scroll to capture every turn — even in 100+ message chats.
+
+## How to Use (3 Steps)
+
+1. Open your AI chat: Go to ChatGPT, Gemini, or Google AI Studio in your browser. Open any conversation you want to save.
+2. Pin the extension: Click the puzzle piece in your browser toolbar, find AI Chat Exporter, and pin it.
+3. Choose and export: Click the AI Chat Exporter icon. Pick PDF, Markdown, or JSON — then download. Or copy as Markdown and paste straight into your notes.
+
+## Privacy
+
+- The extension reads the text and formatting content of your active conversation turn
+- All data processing is performed entirely within your browser locally
+- No conversation data is ever sent to, stored on, or transmitted to any external server
+- No analytics or tracking collected during normal use
+- An optional anonymous uninstall survey opens only after uninstallation
+- No user accounts or personal profiles are created
+- No conversation content is cached or stored beyond the active export session
+- The use of information received from Google APIs adheres to the Chrome Web Store User Data Policy, including Limited Use requirements
+
+## Permissions
+
+- activeTab: Granted temporarily to read the active conversation tab when you click the extension popup icon
+- scripting: Used to safely extract the conversation DOM content from the active tab
+- downloads: Used to save the generated PDF, Markdown, or JSON files directly to your device's downloads folder
+- storage: Used to persist your preferred settings locally (e.g., dark/light mode preference)
+- Host Permissions: Permanent host permission is limited only to aistudio.google.com (required to pre-inject a helper script at document start to securely access AI Studio's internal conversation metadata). For ChatGPT and Gemini, tab access is granted strictly on-demand via the temporary activeTab permission
+
+## Supported Platforms
+
+- aistudio.google.com
+- chatgpt.com
+- chat.openai.com
+- gemini.google.com
+
+## Supported Models
+
+Works with all current models: Gemini 1.5 Pro, Gemini 2.0 Flash, Gemini 2.5 Pro, Gemini 3 Flash, Gemini 3.1 Pro, Gemini 3.1 Flash, GPT-4o, GPT-4, and all future models. Supports reasoning and thinking modes.
+
+## FAQ
+
+Q: Does AI Chat Exporter send my conversations to any server?
+A: No. Everything runs locally in your browser. Your conversations are never uploaded or sent anywhere. An optional anonymous uninstall survey (via Chrome's uninstall API) opens only if you choose to fill it out — no data is collected automatically.
+
+Q: Which formats can I export chats to?
+A: PDF, Markdown, and JSON. PDF is best for sharing, Markdown for notes apps like Obsidian/Notion, JSON for backups and scripts.
+
+Q: Does it work with ChatGPT, Gemini, and Google AI Studio?
+A: Yes. It works on chatgpt.com, chat.openai.com, gemini.google.com, and aistudio.google.com.
+
+Q: Is the extension free?
+A: Yes, 100% free with no limits, no account, and no paywall.
+
+Q: Can I export very long conversations?
+A: Yes. The extension auto-scrolls and captures the full history, even for 100+ message chats.
+
+Q: Can I save my chat to Obsidian or Notion?
+A: Yes, use 'Copy as Markdown' and paste directly. Formatting, code blocks, and tables are preserved.
+
+Q: How do I save or download my chat history?
+A: Open any chat, click the extension, choose PDF/Markdown/JSON, then click Export Now.
+
+Q: Does it work with thinking/reasoning mode?
+A: Yes, both ChatGPT reasoning and Gemini thinking traces are captured if visible in the UI.
+
+Q: What's the difference between PDF and Markdown export?
+A: PDF is a formatted document for sharing/printing. Markdown is plain text with formatting for editing in notes apps.
+
+## Pricing
+
+100% free. No limits, no accounts, no paywall.

@@ -7,14 +7,37 @@ export const metadata: Metadata = {
   description:
     "You're all set! Export ChatGPT, Gemini, and Google AI Studio conversations in 3 simple steps — all locally, no cloud.",
   robots: { index: false, follow: false },
+  openGraph: {
+    title: "Welcome to AI Chat Exporter",
+    description:
+      "You're all set! Export ChatGPT, Gemini, and Google AI Studio conversations in 3 simple steps — all locally, no cloud.",
+    type: "website",
+    url: "/welcome",
+    siteName: "AI Chat Exporter",
+    images: [
+      {
+        url: "/og-image.svg",
+        width: 1200,
+        height: 630,
+        alt: "AI Chat Exporter — Welcome",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Welcome to AI Chat Exporter",
+    description:
+      "You're all set! Export ChatGPT, Gemini, and Google AI Studio conversations in 3 simple steps.",
+    images: ["/og-image.svg"],
+  },
 };
 
 export default function WelcomePage() {
   return (
     <>
       <div className="min-h-screen bg-[#FAF9F6] text-[#0F0F0F] flex flex-col">
-        <Navbar />
-        <main className="flex-1">
+        <Navbar showInstalled />
+        <main id="main-content" className="flex-1">
 
           {/* ── Hero ── */}
           <section className="pt-32 pb-8 md:pt-40 md:pb-12 relative overflow-hidden">

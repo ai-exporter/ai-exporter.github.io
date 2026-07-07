@@ -8,9 +8,27 @@ import Footer from "@/components/Footer";
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://ai-exporter.github.io/",
+              },
+            ],
+          }),
+        }}
+      />
+      <div className="min-h-screen">
       <Navbar />
-      <main>
+      <main id="main-content">
         <Hero />
         <Features />
         <HowItWorks />
@@ -19,5 +37,6 @@ export default function HomePage() {
       </main>
       <Footer />
     </div>
+    </>
   );
 }

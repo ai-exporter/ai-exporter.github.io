@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const Navbar = () => {
+const Navbar = ({ showInstalled }: { showInstalled?: boolean }) => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 border-b-[1.5px] border-[#0F0F0F] bg-[#FAF9F6]">
       <div className="container flex h-16 items-center justify-between">
@@ -16,13 +16,22 @@ const Navbar = () => {
           <a href="/#how-it-works" className="text-sm text-[#0F0F0F] transition-opacity hover:opacity-60">How It Works</a>
           <a href="/#faq" className="text-sm text-[#0F0F0F] transition-opacity hover:opacity-60">FAQ</a>
           <Link href="/privacy" className="text-sm text-[#0F0F0F] transition-opacity hover:opacity-60">Privacy</Link>
-          <a
-            href="https://chromewebstore.google.com/detail/ai-chat-exporter-save-ai/pmccmopibnkjfmaddlloincblhcnmndd"
-            className="inline-flex items-center gap-1.5 rounded-lg border-[1.5px] border-[#0F0F0F] bg-[#E5D9F2] px-4 py-2 text-[13px] font-semibold text-[#0F0F0F] shadow-[3px_3px_0_0_#0F0F0F] transition-all hover:shadow-[4px_4px_0_0_#0F0F0F] hover:translate-x-[-1px] hover:translate-y-[-1px]"
-          >
-            <img src="/assets/web-store-logo.png" alt="Chrome Web Store" className="h-4 w-4 mr-1" />
-            Add to Chrome
-          </a>
+          {showInstalled ? (
+            <span className="inline-flex items-center gap-1.5 rounded-lg border-[1.5px] border-[#0F0F0F] bg-white px-4 py-2 text-[13px] font-semibold text-[#0F0F0F]/60 shadow-[3px_3px_0_0_#0F0F0F] cursor-default">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" className="shrink-0">
+                <path d="M2 7l4 4 6-6" stroke="#0F0F0F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+              Added to Chrome
+            </span>
+          ) : (
+            <a
+              href="https://chromewebstore.google.com/detail/ai-chat-exporter-save-ai/pmccmopibnkjfmaddlloincblhcnmndd"
+              className="inline-flex items-center gap-1.5 rounded-lg border-[1.5px] border-[#0F0F0F] bg-[#E5D9F2] px-4 py-2 text-[13px] font-semibold text-[#0F0F0F] shadow-[3px_3px_0_0_#0F0F0F] transition-all hover:shadow-[4px_4px_0_0_#0F0F0F] hover:translate-x-[-1px] hover:translate-y-[-1px]"
+            >
+              <img src="/assets/web-store-logo.png" alt="Chrome Web Store" className="h-4 w-4 mr-1" />
+              Add to Chrome
+            </a>
+          )}
         </div>
       </div>
     </nav>

@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description:
     "Free Chrome extension to save and download ChatGPT, Gemini, and Google AI Studio conversations. Export chats to PDF, Markdown (.md), or JSON — privately. No servers, no cloud, no account required.",
   authors: [{ name: "Rajat Jain" }],
+  icons: [{ rel: "icon", url: "/favicon.png" }],
   metadataBase: new URL(SITE_URL),
   alternates: { canonical: "/" },
   verification: {
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
     siteName: "AI Chat Exporter",
     images: [
       {
-        url: "/og-image.png",
+        url: "/og-image.svg",
         width: 1200,
         height: 630,
         alt: "AI Chat Exporter — export conversations to PDF, Markdown, and JSON",
@@ -39,10 +40,7 @@ export const metadata: Metadata = {
     title: "AI Chat Exporter",
     description:
       "Export ChatGPT, Gemini, and Google AI Studio conversations to PDF, Markdown, or JSON. Free, private, no account.",
-    images: ["/og-image.png"],
-  },
-  icons: {
-    icon: "/favicon.ico",
+    images: ["/og-image.svg"],
   },
   other: {
     "apple-mobile-web-app-title": "AI Chat Exporter",
@@ -58,7 +56,7 @@ const softwareAppSchema = {
   "@type": "SoftwareApplication",
   name: "AI Chat Exporter",
   applicationCategory: "BrowserApplication",
-  operatingSystem: "Chrome",
+  operatingSystem: "ChromeOS, Windows, macOS, Linux",
   browserRequirements: "Requires Google Chrome browser",
   url: SITE_URL,
   downloadUrl: "https://chromewebstore.google.com/detail/ai-chat-exporter-save-ai/pmccmopibnkjfmaddlloincblhcnmndd",
@@ -174,16 +172,34 @@ const faqSchema = {
   ],
 };
 
-const webPageSchema = {
+const organizationSchema = {
   "@context": "https://schema.org",
-  "@type": "WebPage",
+  "@type": "Organization",
   name: "AI Chat Exporter",
+  url: SITE_URL,
+  logo: `${SITE_URL}/assets/logo-placeholder.png`,
+  contactPoint: {
+    "@type": "ContactPoint",
+    email: "rajatjain.dev@gmail.com",
+    contactType: "customer support",
+  },
+  sameAs: ["https://github.com/ai-exporter/ai-exporter.github.io"],
+};
+
+const webSiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "AI Chat Exporter",
+  url: SITE_URL,
   description:
     "Free Chrome extension to save and export ChatGPT, Gemini, and Google AI Studio conversations to PDF, Markdown, or JSON.",
-  url: SITE_URL,
   inLanguage: "en-US",
   dateModified: new Date().toISOString().split("T")[0],
   datePublished: "2026-03-26",
+  publisher: {
+    "@type": "Organization",
+    "@id": `${SITE_URL}/#organization`,
+  },
 };
 
 const personSchema = {
@@ -244,6 +260,13 @@ export default function RootLayout({
           href="https://fonts.gstatic.com"
           crossOrigin="anonymous"
         />
+        {/* Preload LCP candidate — hero screenshot */}
+        <link
+          rel="preload"
+          as="image"
+          href="/assets/extension-screenshot-placeholder.png"
+          fetchPriority="high"
+        />
 
         {/* JSON-LD Structured Data */}
         <script
@@ -258,7 +281,7 @@ export default function RootLayout({
         />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(webSiteSchema) }}
         />
         <script
           type="application/ld+json"
@@ -268,8 +291,22 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(webSiteSchema) }}
+        />
       </head>
       <body>
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:rounded-lg focus:border-[1.5px] focus:border-[#0F0F0F] focus:bg-white focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-[#0F0F0F] focus:shadow-[3px_3px_0_0_#0F0F0F] focus:outline-none"
+        >
+          Skip to content
+        </a>
         {children}
 
         {/* Noscript fallback — keyword-rich content for crawlers */}
