@@ -56,9 +56,6 @@ const Hero = () => {
                 </svg>
                 Local only · Conversations never leave your browser · No account required
               </p>
-              <svg width="320" height="40" viewBox="0 0 320 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="pointer-events-none absolute -top-2 -left-4">
-                <path d="M8 20 C20 4 310 2 312 20 C314 36 20 37 8 20" stroke="#0F0F0F" strokeWidth="1" fill="none" strokeLinecap="round" opacity="0.3"/>
-              </svg>
             </div>
           </div>
 
