@@ -5,7 +5,7 @@ import { useState } from "react";
 const faqs = [
   {
     q: "Does AI Chat Exporter send my conversations to any server?",
-    a: "No. Everything runs locally in your browser. Your conversations are never uploaded or sent anywhere. An optional anonymous uninstall survey opens in a new tab only if you choose to fill it out — no data is collected automatically.",
+    a: "No. Everything runs locally in your browser. Your conversations are never uploaded or sent anywhere. An optional anonymous uninstall survey (via Chrome's uninstall API) opens only if you choose to fill it out — no data is collected automatically.",
   },
   {
     q: "Which formats can I export chats to?",

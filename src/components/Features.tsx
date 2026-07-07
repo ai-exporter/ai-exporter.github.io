@@ -41,8 +41,8 @@ const features = [
         <rect x="3" y="3" width="14" height="14" rx="2"/><path d="M10 7v6"/><path d="M7 10h6"/>
       </svg>
     ),
-    title: "100% Private",
-    description: "Private by Design — No server, no API calls, no account. Your conversations are processed entirely in your browser and never leave your device. An optional anonymous uninstall survey helps us improve — that's it.",
+    title: "Private by Design",
+    description: "No server, no API calls, no account. Your conversations stay on your device. An anonymous uninstall survey (via Chrome's API) is optional — no data is sent otherwise.",
   },
   {
     icon: (
@@ -74,8 +74,8 @@ const Features = () => {
             <div
               key={f.title}
               className={`rounded-xl border-[1.5px] border-[#0F0F0F] bg-white p-6 shadow-[4px_4px_0_0_#0F0F0F] transition-all hover:shadow-[6px_6px_0_0_#0F0F0F] hover:translate-x-[-2px] hover:translate-y-[-2px] ${
-                i === 1 ? "lg:translate-y-8" : ""
-              } ${i === 4 ? "lg:translate-y-4 relative" : ""}`}
+                i === 4 ? "relative" : ""
+              }`}
             >
               {i === 4 && (
                 <div className="pointer-events-none absolute -top-8 -right-8 hidden lg:block">

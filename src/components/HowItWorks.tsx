@@ -27,7 +27,7 @@ const HowItWorks = () => {
       <div className="container">
         <div className="max-w-lg mx-auto text-center">
           <h2 className="text-4xl font-bold tracking-tight sm:text-5xl font-serif">
-            Three steps. Seconds.
+            Open. Click. Export.
           </h2>
         </div>
 

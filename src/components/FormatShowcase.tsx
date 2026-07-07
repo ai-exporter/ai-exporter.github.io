@@ -28,7 +28,7 @@ const FormatShowcase = () => {
           </article>
 
           {/* Markdown - Dark terminal interior */}
-          <article className="rounded-xl border-[1.5px] border-[#0F0F0F] bg-white shadow-[4px_4px_0_0_#0F0F0F] transition-all hover:shadow-[6px_6px_0_0_#0F0F0F] hover:translate-x-[-2px] hover:translate-y-[-2px] lg:-translate-y-4">
+          <article className="rounded-xl border-[1.5px] border-[#0F0F0F] bg-white shadow-[4px_4px_0_0_#0F0F0F] transition-all hover:shadow-[6px_6px_0_0_#0F0F0F] hover:translate-x-[-2px] hover:translate-y-[-2px] ">
             <div className="p-6">
               <h3 className="mb-1 text-xl font-bold font-serif">📝 Markdown</h3>
               <p className="mb-4 text-sm text-[#0F0F0F]/70">Perfect for pasting into Obsidian, Notion, or any Markdown editor.</p>
