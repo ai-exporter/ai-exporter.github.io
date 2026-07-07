@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { ChevronDown } from "lucide-react";
 
 const faqs = [
   {
@@ -52,31 +51,36 @@ const FAQ = () => {
   return (
     <section id="faq" className="py-24 md:py-32">
       <div className="container max-w-3xl">
-        <h2 className="fade-in-up text-center text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+        <h2 className="text-center text-4xl font-bold tracking-tight sm:text-5xl font-serif">
           Frequently Asked Questions
         </h2>
         <div className="mt-12 space-y-3">
           {faqs.map((f, i) => (
             <div
               key={i}
-              className="fade-in-up card-premium overflow-hidden"
-              style={{ transitionDelay: `${i * 60}ms` }}
+              className="rounded-xl border-[1.5px] border-[#0F0F0F] bg-white shadow-[3px_3px_0_0_#0F0F0F] overflow-hidden transition-all"
             >
               <button
                 onClick={() => setOpen(open === i ? null : i)}
                 className="flex w-full items-center justify-between p-5 text-left"
               >
-                <span className="pr-4 text-sm font-medium text-foreground">{f.q}</span>
-                <ChevronDown
-                  className={`h-4 w-4 shrink-0 text-muted-foreground transition-all duration-300 ${open === i ? "rotate-180 text-primary" : ""}`}
-                />
+                <span className="pr-4 text-sm font-medium">{f.q}</span>
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  className={`shrink-0 transition-all duration-300 ${open === i ? "rotate-180" : ""}`}
+                >
+                  <path d="M4 6l4 4 4-4" stroke="#0F0F0F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
               </button>
               <div
                 className={`overflow-hidden transition-all duration-300 ease-in-out ${
                   open === i ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
                 }`}
               >
-                <div className="px-5 pb-5 text-sm leading-relaxed text-muted-foreground">
+                <div className="px-5 pb-5 text-sm leading-relaxed text-[#0F0F0F]/70">
                   {f.a}
                 </div>
               </div>

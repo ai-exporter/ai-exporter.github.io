@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Providers from "@/components/Providers";
 
 /* ─── SEO Metadata (replaces index.html <head>) ────────────────────── */
 
@@ -270,7 +269,7 @@ export default function RootLayout({
         />
       </head>
       <body>
-        <Providers>{children}</Providers>
+        {children}
 
         {/* Noscript fallback — keyword-rich content for crawlers */}
         <noscript>

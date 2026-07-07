@@ -1,50 +1,76 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-import { Lock, ArrowDown } from "lucide-react";
-
-
 const Hero = () => {
   return (
-    <section className="relative flex min-h-screen items-center justify-center overflow-hidden pt-16">
-      <div className="pointer-events-none absolute top-1/4 left-1/2 -translate-x-1/2 h-[600px] w-[900px] rounded-full bg-primary/5 blur-[150px]" />
-      <div className="pointer-events-none absolute top-1/3 left-1/3 -translate-x-1/2 h-[400px] w-[400px] rounded-full bg-purple-500/5 blur-[120px]" />
-      <div className="pointer-events-none absolute bottom-1/4 right-1/4 h-[300px] w-[300px] rounded-full bg-cyan-500/3 blur-[100px]" />
+    <section className="relative min-h-screen overflow-hidden pt-20 pb-24">
+      {/* Hand-drawn squiggle arrow pointing to CTA */}
+      <div className="pointer-events-none absolute top-[35%] right-[18%] z-20 hidden lg:block">
+        <svg width="160" height="100" viewBox="0 0 160 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2 10 C30 2 40 30 60 20 S80 50 100 40 S120 70 140 55 S150 80 158 70" stroke="#0F0F0F" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
+          <path d="M150 78 L158 70 L148 64" stroke="#0F0F0F" strokeWidth="1.5" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
+          <text x="18" y="8" className="text-[10px]" fill="#0F0F0F" fontFamily="Inter" fontWeight="500">Try it free</text>
+        </svg>
+      </div>
 
-      <div className="container relative z-10 py-20 text-center">
-        <div className="fade-in-up mb-8 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 text-sm text-muted-foreground backdrop-blur-sm">
-          <span className="text-primary">✦</span> Free Chrome Extension
+      <div className="container relative pt-16">
+        {/* Badge - offset to the left */}
+        <div className="inline-flex items-center gap-2 rounded-lg border-[1.5px] border-[#0F0F0F] bg-white px-4 py-1.5 text-sm shadow-[3px_3px_0_0_#0F0F0F] -rotate-1 ml-4 md:ml-8">
+          <span className="text-lg leading-none">✦</span> Free Chrome Extension
         </div>
 
-        <h1 className="fade-in-up mx-auto max-w-4xl text-4xl font-extrabold leading-[1.1] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
-          Export AI Conversations <span className="text-gradient-hero">Beautifully.</span>
-        </h1>
-
-        <p className="fade-in-up mx-auto mt-6 max-w-2xl text-lg text-muted-foreground md:text-xl">
-          Save any ChatGPT, Gemini, or AI Studio chat as formatted PDF, Markdown, or JSON. Download locally — <strong className="text-foreground">your conversations stay private, no cloud, no accounts.</strong>
-        </p>
-
-        <div className="fade-in-up mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-          <Button variant="hero" size="lg" className="px-6" asChild>
-            <a href="https://chromewebstore.google.com/detail/chat-exporter-for-google/pmccmopibnkjfmaddlloincblhcnmndd">
-              <img src="/assets/web-store-logo.png" alt="Chrome Web Store" className="h-7 w-7 mr-2.5" />
-              <span className="text-base">Add to Chrome — It's Free</span>
-            </a>
-          </Button>
-          <Button variant="hero-outline" size="lg" className="px-6" asChild>
-            <a href="#how-it-works">
-              <span className="text-base">See How It Works</span> <ArrowDown className="ml-1 h-4 w-4" />
-            </a>
-          </Button>
+        {/* Main heading with asymmetric layout */}
+        <div className="mt-8 max-w-3xl">
+          <h1 className="text-5xl font-bold leading-[1.1] tracking-tight sm:text-6xl md:text-7xl lg:text-8xl font-serif">
+            Export AI Conversations <br className="hidden sm:block" /><span className="italic">Beautifully.</span>
+          </h1>
         </div>
 
-        <p className="fade-in-up mt-8 flex items-center justify-center gap-3 text-sm text-muted-foreground">
-          <Lock className="h-3.5 w-3.5" />
-          Local only · Conversations never leave your browser · No account required
-        </p>
+        {/* Sub-headline */}
+        <div className="mt-6 max-w-xl ml-auto mr-12 md:mr-24">
+          <p className="text-lg text-[#0F0F0F]/70 md:text-xl">
+            Save any ChatGPT, Gemini, or AI Studio chat as formatted PDF, Markdown, or JSON. Download locally — <strong className="text-[#0F0F0F]">your conversations stay private, no cloud, no accounts.</strong>
+          </p>
+        </div>
 
-        <div className="fade-in-up mx-auto mt-16 max-w-md">
-          <div className="screenshot-frame">
+        {/* CTAs - asymmetric placement */}
+        <div className="mt-10 flex flex-col items-start gap-4 sm:flex-row ml-4 md:ml-8">
+          <a
+            href="https://chromewebstore.google.com/detail/chat-exporter-for-google/pmccmopibnkjfmaddlloincblhcnmndd"
+            className="inline-flex items-center gap-2.5 rounded-lg border-[1.5px] border-[#0F0F0F] bg-[#D1E9D2] px-6 py-3 text-base font-semibold shadow-[4px_4px_0_0_#0F0F0F] transition-all hover:shadow-[5px_5px_0_0_#0F0F0F] hover:translate-x-[-1px] hover:translate-y-[-1px]"
+          >
+            <img src="/assets/web-store-logo.png" alt="Chrome Web Store" className="h-7 w-7 mr-1" />
+            Add to Chrome — It's Free
+          </a>
+          <a
+            href="#how-it-works"
+            className="inline-flex items-center gap-2 rounded-lg border-[1.5px] border-[#0F0F0F] bg-white px-6 py-3 text-base font-semibold shadow-[4px_4px_0_0_#0F0F0F] transition-all hover:shadow-[5px_5px_0_0_#0F0F0F] hover:translate-x-[-1px] hover:translate-y-[-1px]"
+          >
+            See How It Works
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="ml-1">
+              <path d="M8 3v10M4 9l4 4 4-4" stroke="#0F0F0F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+          </a>
+        </div>
+
+        {/* Trust line with squiggle underline */}
+        <div className="relative mt-8 ml-4 md:ml-8">
+          <p className="inline-flex items-center gap-3 text-sm text-[#0F0F0F]/60">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" className="shrink-0">
+              <rect x="1" y="3" width="12" height="10" rx="1" stroke="#0F0F0F" strokeWidth="1.2"/>
+              <path d="M4 3V2a3 3 0 016 0v1" stroke="#0F0F0F" strokeWidth="1.2"/>
+              <path d="M7 8v2" stroke="#0F0F0F" strokeWidth="1.2" strokeLinecap="round"/>
+            </svg>
+            Local only · Conversations never leave your browser · No account required
+          </p>
+          {/* Hand-drawn circle around the trust line */}
+          <svg width="320" height="40" viewBox="0 0 320 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="pointer-events-none absolute -top-2 -left-4">
+            <path d="M8 20 C20 4 310 2 312 20 C314 36 20 37 8 20" stroke="#0F0F0F" strokeWidth="1" fill="none" strokeLinecap="round" opacity="0.3"/>
+          </svg>
+        </div>
+
+        {/* Screenshot with offset shadow, slightly rotated */}
+        <div className="relative mt-16 max-w-lg mx-auto md:mr-8 md:ml-auto">
+          <div className="rounded-xl border-[1.5px] border-[#0F0F0F] bg-white shadow-[6px_6px_0_0_#0F0F0F] rotate-1 overflow-hidden">
             <img
               src="/assets/extension-screenshot-placeholder.png"
               alt="AI Chat Exporter extension popup showing PDF, Markdown, and JSON export options with dark mode toggle and progress bar"

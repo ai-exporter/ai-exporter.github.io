@@ -1,27 +1,29 @@
 const Footer = () => {
   return (
-    <footer className="border-t border-foreground/5 py-12">
+    <footer className="border-t-[1.5px] border-[#0F0F0F] py-12 bg-white">
       <div className="container">
         <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
           <div>
             <div className="flex items-center gap-2 mb-1">
-              <img src="/assets/logo-placeholder.png" alt="AI Chat Exporter logo" className="h-6 w-6 rounded-md" width={24} height={24} />
-              <p className="text-base font-semibold tracking-tight text-foreground whitespace-nowrap">
+              <div className="h-6 w-6 rounded-md border-[1.5px] border-[#0F0F0F] bg-[#E5D9F2] flex items-center justify-center text-[10px] font-bold shadow-[2px_2px_0_0_#0F0F0F]">
+                AE
+              </div>
+              <p className="text-base font-semibold tracking-tight whitespace-nowrap font-serif">
                 AI Chat Exporter
               </p>
             </div>
-            <p className="mt-3 text-sm text-muted-foreground max-w-md">ChatGPT is a trademark of OpenAI. Gemini and Google AI Studios are trademarks of Google LLC. Not affiliated with or endorsed by OpenAI or Google LLC.</p>
+            <p className="mt-3 text-sm text-[#0F0F0F]/60 max-w-md">ChatGPT is a trademark of OpenAI. Gemini and Google AI Studio are trademarks of Google LLC. Not affiliated with or endorsed by OpenAI or Google LLC.</p>
           </div>
-          <div className="flex gap-6 text-sm text-muted-foreground">
-            <a href="https://chromewebstore.google.com/detail/chat-exporter-for-google/pmccmopibnkjfmaddlloincblhcnmndd" className="transition-colors hover:text-foreground relative after:absolute after:-bottom-0.5 after:left-0 after:h-px after:w-0 after:bg-primary after:transition-all after:duration-300 hover:after:w-full">Chrome Web Store</a>
-            <a href="/privacy" className="transition-colors hover:text-foreground relative after:absolute after:-bottom-0.5 after:left-0 after:h-px after:w-0 after:bg-primary after:transition-all after:duration-300 hover:after:w-full">Privacy Policy</a>
+          <div className="flex gap-6 text-sm text-[#0F0F0F]/70">
+            <a href="https://chromewebstore.google.com/detail/chat-exporter-for-google/pmccmopibnkjfmaddlloincblhcnmndd" className="transition-opacity hover:opacity-60">Chrome Web Store</a>
+            <a href="/privacy" className="transition-opacity hover:opacity-60">Privacy Policy</a>
           </div>
         </div>
-        <div className="mt-8 pt-6 border-t border-foreground/5">
-          <p className="text-center text-xs text-muted-foreground/70 max-w-xl mx-auto">
+        <div className="mt-8 pt-6 border-t-[1.5px] border-[#0F0F0F]/20">
+          <p className="text-center text-xs text-[#0F0F0F]/50 max-w-xl mx-auto">
             Save and export your ChatGPT, Gemini, and Google AI Studio conversations to PDF, Markdown, and JSON — 100% free. Your chat content stays private
           </p>
-          <p className="mt-3 text-center text-xs text-muted-foreground">
+          <p className="mt-3 text-center text-xs text-[#0F0F0F]/50">
             © 2025 AI Chat Exporter, made with ♥ by Rajat Jain.
           </p>
         </div>

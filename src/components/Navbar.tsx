@@ -1,28 +1,28 @@
-import { Button } from "@/components/ui/button";
-
-
 const Navbar = () => {
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 border-b border-foreground/5 bg-background/60 backdrop-blur-xl">
+    <nav className="fixed top-0 left-0 right-0 z-50 border-b-[1.5px] border-[#0F0F0F] bg-[#FAF9F6]">
       <div className="container flex h-16 items-center justify-between">
         <a href="/" className="flex items-center gap-2.5">
-          <img src="/assets/logo-placeholder.png" alt="AI Chat Exporter logo" className="h-8 w-8 rounded-lg" width={32} height={32} />
-          <span className="text-base font-semibold tracking-tight text-foreground whitespace-nowrap">
+          <div className="h-8 w-8 rounded-lg border-[1.5px] border-[#0F0F0F] bg-white shadow-[2px_2px_0_0_#0F0F0F] flex items-center justify-center text-xs font-bold">
+            AE
+          </div>
+          <span className="text-base font-semibold tracking-tight whitespace-nowrap font-serif">
             AI Chat Exporter
           </span>
         </a>
 
         <div className="hidden items-center gap-8 md:flex">
-          <a href="/#features" className="text-sm text-muted-foreground transition-colors hover:text-foreground relative after:absolute after:-bottom-1 after:left-0 after:h-px after:w-0 after:bg-primary after:transition-all after:duration-300 hover:after:w-full">Features</a>
-          <a href="/#how-it-works" className="text-sm text-muted-foreground transition-colors hover:text-foreground relative after:absolute after:-bottom-1 after:left-0 after:h-px after:w-0 after:bg-primary after:transition-all after:duration-300 hover:after:w-full">How It Works</a>
-          <a href="/#faq" className="text-sm text-muted-foreground transition-colors hover:text-foreground relative after:absolute after:-bottom-1 after:left-0 after:h-px after:w-0 after:bg-primary after:transition-all after:duration-300 hover:after:w-full">FAQ</a>
-          <a href="/privacy" className="text-sm text-muted-foreground transition-colors hover:text-foreground relative after:absolute after:-bottom-1 after:left-0 after:h-px after:w-0 after:bg-primary after:transition-all after:duration-300 hover:after:w-full">Privacy</a>
-          <Button variant="hero" size="sm" asChild>
-            <a href="https://chromewebstore.google.com/detail/chat-exporter-for-google/pmccmopibnkjfmaddlloincblhcnmndd">
-              <img src="/assets/web-store-logo.png" alt="Chrome Web Store" className="h-4 w-4 mr-1.5" />
-              <span className="text-[13px]">Add to Chrome — Free</span>
-            </a>
-          </Button>
+          <a href="/#features" className="text-sm text-[#0F0F0F] transition-opacity hover:opacity-60">Features</a>
+          <a href="/#how-it-works" className="text-sm text-[#0F0F0F] transition-opacity hover:opacity-60">How It Works</a>
+          <a href="/#faq" className="text-sm text-[#0F0F0F] transition-opacity hover:opacity-60">FAQ</a>
+          <a href="/privacy" className="text-sm text-[#0F0F0F] transition-opacity hover:opacity-60">Privacy</a>
+          <a
+            href="https://chromewebstore.google.com/detail/chat-exporter-for-google/pmccmopibnkjfmaddlloincblhcnmndd"
+            className="inline-flex items-center gap-1.5 rounded-lg border-[1.5px] border-[#0F0F0F] bg-[#E5D9F2] px-4 py-2 text-[13px] font-semibold text-[#0F0F0F] shadow-[3px_3px_0_0_#0F0F0F] transition-all hover:shadow-[4px_4px_0_0_#0F0F0F] hover:translate-x-[-1px] hover:translate-y-[-1px]"
+          >
+            <img src="/assets/web-store-logo.png" alt="Chrome Web Store" className="h-4 w-4 mr-1" />
+            Add to Chrome — Free
+          </a>
         </div>
       </div>
     </nav>

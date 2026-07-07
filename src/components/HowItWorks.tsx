@@ -23,34 +23,33 @@ const steps = [
 
 const HowItWorks = () => {
   return (
-    <section id="how-it-works" className="py-24 md:py-32 relative">
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent via-primary/2 to-transparent" />
-      <div className="container relative">
-        <h2 className="fade-in-up text-center text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-          Three steps. Seconds.
-        </h2>
+    <section id="how-it-works" className="py-24 md:py-32">
+      <div className="container">
+        <div className="max-w-lg mx-auto text-center">
+          <h2 className="text-4xl font-bold tracking-tight sm:text-5xl font-serif">
+            Three steps. Seconds.
+          </h2>
+        </div>
 
         <div className="mt-16 grid gap-8 md:grid-cols-3">
           {steps.map((s, i) => (
-            <div key={s.num} className="fade-in-up relative text-center" style={{ transitionDelay: `${i * 120}ms` }}>
+            <div key={s.num} className="relative text-center">
               {i < steps.length - 1 && (
                 <div className="pointer-events-none absolute right-0 top-12 hidden w-full translate-x-1/2 md:block">
-                  <div className="mx-8 border-t border-dashed border-primary/20" />
+                  <div className="mx-12 border-t-[1.5px] border-dashed border-[#0F0F0F]" />
                 </div>
               )}
-              <div className="relative mx-auto mb-5 inline-flex h-14 w-14 items-center justify-center rounded-2xl border border-primary/10 bg-primary/5 backdrop-blur-sm">
-                <s.icon className="h-6 w-6 text-primary" />
-                <span className="absolute -top-2 -right-2 flex h-6 w-6 items-center justify-center rounded-full bg-primary text-xs font-bold text-primary-foreground shadow-lg shadow-primary/30">
+              <div className="relative mx-auto mb-5 inline-flex h-16 w-16 items-center justify-center rounded-xl border-[1.5px] border-[#0F0F0F] bg-white shadow-[3px_3px_0_0_#0F0F0F]">
+                <s.icon className="h-7 w-7 text-[#0F0F0F]" />
+                <span className="absolute -top-2.5 -right-2.5 flex h-7 w-7 items-center justify-center rounded-full border-[1.5px] border-[#0F0F0F] bg-[#E5D9F2] text-xs font-bold shadow-[2px_2px_0_0_#0F0F0F]">
                   {s.num}
                 </span>
               </div>
-              <h3 className="mb-2 text-lg font-semibold text-foreground">{s.title}</h3>
-              <p className="mx-auto max-w-xs text-sm text-muted-foreground">{s.description}</p>
+              <h3 className="mb-2 text-lg font-semibold">{s.title}</h3>
+              <p className="mx-auto max-w-xs text-sm text-[#0F0F0F]/70">{s.description}</p>
             </div>
           ))}
         </div>
-
-
       </div>
     </section>
   );
