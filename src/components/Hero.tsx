@@ -9,7 +9,7 @@ const Hero = () => {
           <div className="flex-1">
             {/* Badge */}
             <div className="inline-flex items-center gap-2 rounded-lg border-[1.5px] border-[#0F0F0F] bg-white px-4 py-1.5 text-sm shadow-[3px_3px_0_0_#0F0F0F] -rotate-1">
-              <span className="text-lg leading-none">✦</span> Free Chrome Extension
+              <span className="text-lg leading-none">✦</span> Used by 1,800+ people weekly
             </div>
 
             {/* Main heading */}
