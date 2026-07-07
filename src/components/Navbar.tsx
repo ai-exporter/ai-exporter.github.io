@@ -21,7 +21,7 @@ const Navbar = () => {
             className="inline-flex items-center gap-1.5 rounded-lg border-[1.5px] border-[#0F0F0F] bg-[#E5D9F2] px-4 py-2 text-[13px] font-semibold text-[#0F0F0F] shadow-[3px_3px_0_0_#0F0F0F] transition-all hover:shadow-[4px_4px_0_0_#0F0F0F] hover:translate-x-[-1px] hover:translate-y-[-1px]"
           >
             <img src="/assets/web-store-logo.png" alt="Chrome Web Store" className="h-4 w-4 mr-1" />
-            Add to Chrome — Free
+            Add to Chrome
           </a>
         </div>
       </div>

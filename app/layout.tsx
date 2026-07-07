@@ -302,7 +302,7 @@ export default function RootLayout({
           </p>
           <p>
             <a href="https://chromewebstore.google.com/detail/chat-exporter-for-google/pmccmopibnkjfmaddlloincblhcnmndd">
-              Add to Chrome — Free
+              Add to Chrome
             </a>
           </p>
           <p>
