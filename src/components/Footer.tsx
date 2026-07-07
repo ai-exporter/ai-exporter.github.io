@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Footer = () => {
   return (
     <footer className="border-t-[1.5px] border-[#0F0F0F] py-12 bg-white">
@@ -14,7 +16,7 @@ const Footer = () => {
           </div>
           <div className="flex gap-6 text-sm text-[#0F0F0F]/70">
             <a href="https://chromewebstore.google.com/detail/ai-chat-exporter-save-ai/pmccmopibnkjfmaddlloincblhcnmndd" className="transition-opacity hover:opacity-60">Chrome Web Store</a>
-            <a href="/privacy" className="transition-opacity hover:opacity-60">Privacy Policy</a>
+            <Link href="/privacy" className="transition-opacity hover:opacity-60">Privacy Policy</Link>
           </div>
         </div>
         <div className="mt-8 pt-6 border-t-[1.5px] border-[#0F0F0F]/20">
