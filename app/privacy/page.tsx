@@ -65,7 +65,7 @@ export default function PrivacyPage() {
             Privacy Policy
           </h1>
           <p className="text-sm text-[#0F0F0F]/50 mb-12">
-            Effective date: June 2026
+            Effective date: June 2026 (Updated July 2026 — v2.1.0)
           </p>
 
           <div className="space-y-8 text-[15px] leading-relaxed text-[#0F0F0F]/70">
@@ -76,7 +76,7 @@ export default function PrivacyPage() {
               <p>
                 The extension reads the text and formatting content of your active conversation turn on the supported platforms—specifically including message text, code blocks, tables, lists, system instructions (where supported, like Google AI Studio), and optionally the page URL.
               </p>
-              <p className="mt-3">The extension runs only on:</p>
+              <p className="mt-3">The extension operates strictly on:</p>
               <ul className="list-disc pl-5 space-y-1.5 marker:text-[#0F0F0F]/30 mt-2">
                 <li><code className="font-mono text-[#0F0F0F]/80">aistudio.google.com</code></li>
                 <li><code className="font-mono text-[#0F0F0F]/80">chatgpt.com</code></li>
@@ -84,7 +84,7 @@ export default function PrivacyPage() {
                 <li><code className="font-mono text-[#0F0F0F]/80">gemini.google.com</code></li>
               </ul>
               <p className="mt-3">
-                No permissions beyond the active tab, content scripting, storage, and file downloads are requested.
+                No permissions beyond active tab access, content scripting, local storage, file downloads, and specified host permissions are requested.
               </p>
             </section>
 
@@ -118,11 +118,11 @@ export default function PrivacyPage() {
                 Permissions Used
               </h2>
               <ul className="list-disc pl-5 space-y-1.5 marker:text-[#0F0F0F]/30">
-                <li><strong className="font-semibold text-[#0F0F0F]">activeTab</strong> — Granted temporarily to read the active conversation tab when you click the extension popup icon.</li>
+                <li><strong className="font-semibold text-[#0F0F0F]">activeTab</strong> — Granted to read the active conversation tab when you click the extension popup icon.</li>
                 <li><strong className="font-semibold text-[#0F0F0F]">scripting</strong> — Used to safely extract the conversation DOM content from the active tab.</li>
-                <li><strong className="font-semibold text-[#0F0F0F]">downloads</strong> — Used to save the generated PDF, Markdown, or JSON files directly to your device's downloads folder.</li>
+                <li><strong className="font-semibold text-[#0F0F0F]">downloads</strong> — Used to save generated PDF, Markdown, or JSON files directly to your device's downloads folder.</li>
                 <li><strong className="font-semibold text-[#0F0F0F]">storage</strong> — Used to persist your preferred settings locally (e.g., dark/light mode preference).</li>
-                <li><strong className="font-semibold text-[#0F0F0F]">Host Permissions</strong> — Permanent host permission is limited only to <code className="font-mono text-[#0F0F0F]/80">aistudio.google.com</code> (required to pre-inject a helper script at document start to securely access AI Studio's internal conversation metadata). For ChatGPT and Gemini, tab access is granted strictly on-demand via the temporary <code className="font-mono text-[#0F0F0F]/80">activeTab</code> permission when you open the popup.</li>
+                <li><strong className="font-semibold text-[#0F0F0F]">Host Permissions</strong> — Host permissions for <code className="font-mono text-[#0F0F0F]/80">aistudio.google.com</code>, <code className="font-mono text-[#0F0F0F]/80">chatgpt.com</code>, <code className="font-mono text-[#0F0F0F]/80">chat.openai.com</code>, and <code className="font-mono text-[#0F0F0F]/80">gemini.google.com</code> are used strictly to pre-inject native Export action buttons directly into the headers of supported AI chat interfaces at document start. All extraction and file creation remain 100% local on your machine.</li>
               </ul>
             </section>
 
