@@ -26,6 +26,11 @@ const Footer = () => {
           <p className="mt-3 text-center text-xs text-[#0F0F0F]/50">
             © 2026 AI Chat Exporter, made with ♥ by Rajat Jain. <span className="inline-block mx-1">·</span> v2.1.0
           </p>
+          <div className="mt-4 flex justify-center">
+            <a href="https://startupfa.me/s/ai-chat-exporter?utm_source=ai-exporter.github.io" target="_blank">
+              <img src="https://startupfa.me/badges/featured-badge.webp" alt="AI Chat Exporter - Featured on Startup Fame" width="171" height="54" />
+            </a>
+          </div>
         </div>
       </div>
     </footer>
