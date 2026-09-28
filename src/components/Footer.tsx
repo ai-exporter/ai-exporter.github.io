@@ -24,9 +24,12 @@ const Footer = () => {
             Save and export your ChatGPT, Gemini, and Google AI Studio conversations to PDF, Markdown, and JSON — 100% free. Your chat content stays private
           </p>
           <p className="mt-3 text-center text-xs text-[#0F0F0F]/50">
-            © 2026 AI Chat Exporter, made with ♥ by Rajat Jain. <span className="inline-block mx-1">·</span> v2.1.0
+            © 2026 AI Chat Exporter, made with ♥ by Rajat Jain. <span className="inline-block mx-1">·</span> v2.2.0
           </p>
-          <div className="mt-4 flex justify-center">
+          <div className="mt-4 flex flex-wrap items-center justify-center gap-3">
+            <a href="https://www.producthunt.com/products/chat-exporter-for-google-ai-studio/launches/chat-exporter-for-google-ai-studio?embed=true&utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-chat-exporter-for-google-ai-studio" target="_blank" rel="noopener noreferrer">
+              <img alt="Chat Exporter for Google AI Studio - Export AI Studio chats to beautiful PDF, Markdown & JSON | Product Hunt" width="250" height="54" src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1119263&theme=light&t=1790604298289" />
+            </a>
             <a href="https://startupfa.me/s/ai-chat-exporter?utm_source=ai-exporter.github.io" target="_blank">
               <img src="https://startupfa.me/badges/featured-badge.webp" alt="AI Chat Exporter - Featured on Startup Fame" width="171" height="54" />
             </a>

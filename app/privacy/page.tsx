@@ -65,7 +65,7 @@ export default function PrivacyPage() {
             Privacy Policy
           </h1>
           <p className="text-sm text-[#0F0F0F]/50 mb-12">
-            Updated: July 2026 (v2.1.0)
+            Updated: September 2026 (v2.2.0)
           </p>
 
           <div className="space-y-8 text-[15px] leading-relaxed text-[#0F0F0F]/70">
@@ -74,7 +74,7 @@ export default function PrivacyPage() {
                 What Data is Accessed
               </h2>
               <p>
-                The extension reads the text and formatting content of your active conversation turn on the supported platforms—specifically including message text, code blocks, tables, lists, system instructions (where supported, like Google AI Studio), and optionally the page URL.
+                The extension reads the text and formatting content of your active conversation turn on the supported platforms—specifically including message text, code blocks, tables, lists, system instructions (where supported, like Google AI Studio), attached images and files you uploaded to the chat, and optionally the page URL.
               </p>
               <p className="mt-3">The extension operates strictly on:</p>
               <ul className="list-disc pl-5 space-y-1.5 marker:text-[#0F0F0F]/30 mt-2">
@@ -84,7 +84,7 @@ export default function PrivacyPage() {
                 <li><code className="font-mono text-[#0F0F0F]/80">gemini.google.com</code></li>
               </ul>
               <p className="mt-3">
-                No permissions beyond active tab access, content scripting, local storage, file downloads, and specified host permissions are requested.
+                No permissions beyond active tab access, content scripting, local storage, file downloads, extended local staging quota (unlimitedStorage), and specified host permissions are requested.
               </p>
             </section>
 
@@ -97,6 +97,9 @@ export default function PrivacyPage() {
               </p>
               <p className="mt-3">
                 All data processing is performed <strong className="font-semibold text-[#0F0F0F]">entirely within your browser locally</strong>. No conversation data is ever sent to, stored on, or transmitted to any external server.
+              </p>
+              <p className="mt-3">
+                Two content-only fetches can occur while rendering an export: the Inter display font, and the bytes of pictures already visible in your chat (so they print offline instead of as links). Both fetch file content only. No conversation text, identity, or browsing data accompanies them.
               </p>
             </section>
 
@@ -122,6 +125,7 @@ export default function PrivacyPage() {
                 <li><strong className="font-semibold text-[#0F0F0F]">scripting</strong> — Used to safely extract the conversation DOM content from the active tab.</li>
                 <li><strong className="font-semibold text-[#0F0F0F]">downloads</strong> — Used to save generated PDF, Markdown, or JSON files directly to your device's downloads folder.</li>
                 <li><strong className="font-semibold text-[#0F0F0F]">storage</strong> — Used to persist your preferred settings locally (e.g., dark/light mode preference).</li>
+                <li><strong className="font-semibold text-[#0F0F0F]">unlimitedStorage</strong> — Lets large exports (long chats with code and images) exceed the default 10MB local staging quota while the export renders. Nothing is retained afterward.</li>
                 <li><strong className="font-semibold text-[#0F0F0F]">Host Permissions</strong> — Host permissions for <code className="font-mono text-[#0F0F0F]/80">aistudio.google.com</code>, <code className="font-mono text-[#0F0F0F]/80">chatgpt.com</code>, <code className="font-mono text-[#0F0F0F]/80">chat.openai.com</code>, and <code className="font-mono text-[#0F0F0F]/80">gemini.google.com</code> are used strictly to pre-inject native Export action buttons directly into the headers of supported AI chat interfaces at document start. All extraction and file creation remain 100% local on your machine.</li>
               </ul>
             </section>
