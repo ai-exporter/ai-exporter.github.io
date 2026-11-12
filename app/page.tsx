@@ -3,7 +3,9 @@ import Hero from "@/components/Hero";
 import Features from "@/components/Features";
 import HowItWorks from "@/components/HowItWorks";
 import FormatShowcase from "@/components/FormatShowcase";
+import Reviews from "@/components/Reviews";
 import FAQ from "@/components/FAQ";
+import ClosingCTA from "@/components/ClosingCTA";
 import Footer from "@/components/Footer";
 
 export default function HomePage() {
@@ -27,16 +29,18 @@ export default function HomePage() {
         }}
       />
       <div className="min-h-screen">
-      <Navbar />
-      <main id="main-content">
-        <Hero />
-        <Features />
-        <HowItWorks />
-        <FormatShowcase />
-        <FAQ />
-      </main>
-      <Footer />
-    </div>
+        <Navbar />
+        <main id="main-content">
+          <Hero />
+          <Features />
+          <HowItWorks />
+          <FormatShowcase />
+          <Reviews />
+          <FAQ />
+          <ClosingCTA />
+        </main>
+        <Footer />
+      </div>
     </>
   );
 }

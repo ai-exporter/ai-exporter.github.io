@@ -1,40 +1,151 @@
+"use client";
+
 import Link from "next/link";
+import { useEffect, useState } from "react";
+import { ArrowUpRight, Check, Chrome, Menu, X } from "lucide-react";
+import Logo from "@/components/Logo";
+
+const CHROME_STORE_URL =
+  "https://chromewebstore.google.com/detail/ai-chat-exporter-save-ai/pmccmopibnkjfmaddlloincblhcnmndd";
+
+const navLinks = [
+  { label: "Features", href: "/#features" },
+  { label: "How it works", href: "/#how-it-works" },
+  { label: "Formats", href: "/#formats" },
+  { label: "Reviews", href: "/#reviews" },
+  { label: "FAQ", href: "/#faq" },
+];
 
 const Navbar = ({ showInstalled }: { showInstalled?: boolean }) => {
-  return (
-    <nav className="fixed top-0 left-0 right-0 z-50 border-b-[1.5px] border-[#0F0F0F] bg-[#FAF9F6]">
-      <div className="container flex h-16 items-center justify-between">
-        <a href="/" className="flex items-center gap-2.5">
-          <img src="/assets/logo-placeholder.png" alt="AI Chat Exporter logo" className="h-8 w-8" width={32} height={32} />
-          <span className="text-base font-semibold tracking-tight whitespace-nowrap font-serif">
-            AI Chat Exporter
-          </span>
-        </a>
+  const [open, setOpen] = useState(false);
 
-        <div className="hidden items-center gap-8 md:flex">
-          <a href="/#features" className="text-sm text-[#0F0F0F] transition-opacity hover:opacity-60">Features</a>
-          <a href="/#how-it-works" className="text-sm text-[#0F0F0F] transition-opacity hover:opacity-60">How It Works</a>
-          <a href="/#faq" className="text-sm text-[#0F0F0F] transition-opacity hover:opacity-60">FAQ</a>
-          <Link href="/privacy" className="text-sm text-[#0F0F0F] transition-opacity hover:opacity-60">Privacy</Link>
-          {showInstalled ? (
-            <span className="inline-flex items-center gap-1.5 rounded-lg border-[1.5px] border-[#0F0F0F] bg-white px-4 py-2 text-[13px] font-semibold text-[#0F0F0F]/60 shadow-[3px_3px_0_0_#0F0F0F] cursor-default">
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" className="shrink-0">
-                <path d="M2 7l4 4 6-6" stroke="#0F0F0F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
-              Added to Chrome
-            </span>
-          ) : (
-            <a
-              href="https://chromewebstore.google.com/detail/ai-chat-exporter-save-ai/pmccmopibnkjfmaddlloincblhcnmndd"
-              className="inline-flex items-center gap-1.5 rounded-lg border-[1.5px] border-[#0F0F0F] bg-[#E5D9F2] px-4 py-2 text-[13px] font-semibold text-[#0F0F0F] shadow-[3px_3px_0_0_#0F0F0F] transition-all hover:shadow-[4px_4px_0_0_#0F0F0F] hover:translate-x-[-1px] hover:translate-y-[-1px]"
+  useEffect(() => {
+    if (!open) return;
+
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setOpen(false);
+    };
+
+    document.addEventListener("keydown", onKeyDown);
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+
+    return () => {
+      document.removeEventListener("keydown", onKeyDown);
+      document.body.style.overflow = previousOverflow;
+    };
+  }, [open]);
+
+  return (
+    <header className="fixed inset-x-0 top-0 z-50">
+      <div className="border-b border-hairline/80 bg-white/85 backdrop-blur-xl">
+        <nav
+          className="container-page flex h-16 items-center justify-between gap-4"
+          aria-label="Main"
+        >
+          <Logo />
+
+          <div className="hidden items-center gap-0.5 lg:flex">
+            {navLinks.map((link) => (
+              <a
+                key={link.label}
+                href={link.href}
+                className="rounded-full px-3.5 py-2 text-sm font-medium text-body transition-colors hover:bg-surface-soft hover:text-ink"
+              >
+                {link.label}
+              </a>
+            ))}
+          </div>
+
+          <div className="hidden items-center gap-3 lg:flex">
+            <Link
+              href="/privacy"
+              className="rounded-full px-3.5 py-2 text-sm font-medium text-body transition-colors hover:bg-surface-soft hover:text-ink"
             >
-              <img src="/assets/web-store-logo.png" alt="Chrome Web Store" className="h-4 w-4 mr-1" />
-              Add to Chrome
-            </a>
-          )}
-        </div>
+              Privacy
+            </Link>
+            {showInstalled ? (
+              <span className="inline-flex h-10 cursor-default items-center gap-2 rounded-full border border-hairline bg-surface-soft px-5 text-sm font-semibold text-muted">
+                <Check className="h-4 w-4" />
+                Added to Chrome
+              </span>
+            ) : (
+              <a
+                href={CHROME_STORE_URL}
+                className="btn-primary h-10 px-5"
+                aria-label="Add AI Chat Exporter to Chrome"
+              >
+                <Chrome className="h-4 w-4" />
+                Add to Chrome
+              </a>
+            )}
+          </div>
+
+          <button
+            type="button"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-hairline bg-white text-ink transition-colors hover:bg-surface-soft lg:hidden"
+            aria-label={open ? "Close navigation menu" : "Open navigation menu"}
+            aria-expanded={open}
+            aria-controls="mobile-navigation"
+            onClick={() => setOpen((value) => !value)}
+          >
+            {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          </button>
+        </nav>
       </div>
-    </nav>
+
+      {open && (
+        <div
+          id="mobile-navigation"
+          className="fixed inset-x-0 bottom-0 top-16 z-40 overflow-y-auto bg-white lg:hidden"
+        >
+          <div className="container-page flex min-h-full flex-col py-8">
+            <div className="flex flex-col divide-y divide-hairline">
+              {navLinks.map((link) => (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  onClick={() => setOpen(false)}
+                  className="flex items-center justify-between py-4 text-lg font-medium text-ink"
+                >
+                  {link.label}
+                  <ArrowUpRight className="h-4 w-4 text-muted" />
+                </a>
+              ))}
+              <Link
+                href="/privacy"
+                onClick={() => setOpen(false)}
+                className="flex items-center justify-between py-4 text-lg font-medium text-ink"
+              >
+                Privacy
+                <ArrowUpRight className="h-4 w-4 text-muted" />
+              </Link>
+            </div>
+
+            <div className="mt-auto pt-10">
+              {showInstalled ? (
+                <span className="flex h-12 w-full items-center justify-center gap-2 rounded-full border border-hairline bg-surface-soft text-sm font-semibold text-muted">
+                  <Check className="h-4 w-4" />
+                  Added to Chrome
+                </span>
+              ) : (
+                <a
+                  href={CHROME_STORE_URL}
+                  className="btn-primary h-12 w-full"
+                  onClick={() => setOpen(false)}
+                >
+                  <Chrome className="h-4 w-4" />
+                  Add to Chrome
+                </a>
+              )}
+              <p className="mt-4 text-center text-xs text-muted">
+                Free forever · No account required
+              </p>
+            </div>
+          </div>
+        </div>
+      )}
+    </header>
   );
 };
 

@@ -1,6 +1,6 @@
 # AI Chat Exporter
 
-> Free Chrome extension to save and export ChatGPT, Gemini, and Google AI Studio conversations to PDF, Markdown, or JSON. 100% local processing — no data ever leaves your browser.
+> Free Chrome extension to save and export ChatGPT, Gemini, and Google AI Studio conversations to PDF, Markdown, or JSON. 100% local processing. No data ever leaves your browser.
 
 AI Chat Exporter is a privacy-first Chrome extension that runs entirely in your browser. No servers, no accounts, no cloud. Your conversations stay on your device.
 

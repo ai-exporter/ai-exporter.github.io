@@ -1,5 +1,27 @@
 import type { Metadata } from "next";
+import { Inter, JetBrains_Mono } from "next/font/google";
+import localFont from "next/font/local";
+import CustomCursor from "@/components/CustomCursor";
 import "./globals.css";
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
+const jetbrains = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-jetbrains",
+  display: "swap",
+});
+
+const calSans = localFont({
+  src: "./fonts/CalSans.woff2",
+  variable: "--font-cal",
+  display: "swap",
+  weight: "400",
+});
 
 /* ─── SEO Metadata (replaces index.html <head>) ────────────────────── */
 
@@ -9,7 +31,7 @@ export const metadata: Metadata = {
   title:
     "AI Chat Exporter: Save ChatGPT, Gemini & AI Studio chats to PDF, Markdown & JSON",
   description:
-    "Free Chrome extension to save and download ChatGPT, Gemini, and Google AI Studio conversations. Export chats to PDF, Markdown (.md), or JSON — privately. No servers, no cloud, no account required.",
+    "Free Chrome extension to save and download ChatGPT, Gemini, and Google AI Studio conversations. Export chats to PDF, Markdown (.md), or JSON, privately. No servers, no cloud, no account required.",
   authors: [{ name: "Rajat Jain" }],
   icons: [{ rel: "icon", url: "/favicon.png" }],
   metadataBase: new URL(SITE_URL),
@@ -30,7 +52,7 @@ export const metadata: Metadata = {
         url: "/og-image.svg",
         width: 1200,
         height: 630,
-        alt: "AI Chat Exporter — export conversations to PDF, Markdown, and JSON",
+        alt: "AI Chat Exporter: export conversations to PDF, Markdown, and JSON",
       },
     ],
   },
@@ -43,7 +65,7 @@ export const metadata: Metadata = {
   },
   other: {
     "apple-mobile-web-app-title": "AI Chat Exporter",
-    "theme-color": "#111216",
+    "theme-color": "#ffffff",
   },
 };
 
@@ -66,17 +88,23 @@ const softwareAppSchema = {
     "Free Chrome extension to export ChatGPT, Gemini, and Google AI Studio conversations to PDF, Markdown, or JSON. 100% local processing, no data upload.",
   featureList: [
     "Export to PDF with dark mode support",
-    "Export to Markdown — paste into Obsidian, Notion, or any editor",
+    "Export to Markdown: paste into Obsidian, Notion, or any editor",
     "Export to JSON for developers and automation",
     "Copy as Markdown to clipboard",
     "Auto-generated filenames from your first message",
-    "100% local processing — no data upload",
+    "100% local processing, no data upload",
     "Full conversation capture with smart scrolling",
   ],
   offers: {
     "@type": "Offer",
     price: "0",
     priceCurrency: "USD",
+  },
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "4.6",
+    ratingCount: "19",
+    bestRating: "5",
   },
   author: {
     "@type": "Person",
@@ -93,7 +121,7 @@ const faqSchema = {
       name: "Does AI Chat Exporter send my conversations to any server?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "No. Everything runs locally in your browser. Your conversations are never uploaded or sent anywhere. An optional anonymous uninstall survey (via Chrome's uninstall API) opens only if you choose to fill it out — no data is collected automatically.",
+        text: "No. Everything runs locally in your browser. Your conversations are never uploaded or sent anywhere. An optional anonymous uninstall survey (via Chrome's uninstall API) opens only if you choose to fill it out. No data is collected automatically.",
       },
     },
     {
@@ -142,14 +170,6 @@ const faqSchema = {
       acceptedAnswer: {
         "@type": "Answer",
         text: "Open any chat, click the extension, choose PDF/Markdown/JSON, then click Export Now.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Does it work with GPT-4o, Gemini 2.5 Pro, and AI Studio models?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes, it works with all current models on ChatGPT, Gemini, and AI Studio, including reasoning/thinking modes.",
       },
     },
     {
@@ -250,16 +270,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" dir="ltr" suppressHydrationWarning>
+    <html
+      lang="en"
+      dir="ltr"
+      suppressHydrationWarning
+      className={`${inter.variable} ${jetbrains.variable} ${calSans.variable}`}
+    >
       <head>
-        {/* Font preconnect */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
-        {/* Preload LCP candidate — hero screenshot */}
+        {/* Preload LCP candidate: hero screenshot */}
         <link
           rel="preload"
           as="image"
@@ -295,28 +313,29 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
       </head>
-      <body>
+      <body className="bg-white text-ink font-sans antialiased">
         <a
           href="#main-content"
-          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:rounded-lg focus:border-[1.5px] focus:border-[#0F0F0F] focus:bg-white focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-[#0F0F0F] focus:shadow-[3px_3px_0_0_#0F0F0F] focus:outline-none"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:rounded-full focus:bg-forest focus:px-5 focus:py-2.5 focus:text-sm focus:font-semibold focus:text-white focus:outline-none"
         >
           Skip to content
         </a>
         {children}
+        <CustomCursor />
 
-        {/* Noscript fallback — keyword-rich content for crawlers */}
+        {/* Noscript fallback: keyword-rich content for crawlers */}
         <noscript>
-          <h1>AI Chat Exporter — Free Chrome Extension</h1>
+          <h1>AI Chat Exporter: Free Chrome Extension</h1>
           <p>
             Save and export your ChatGPT, Gemini, and Google AI Studio conversations to PDF,
             Markdown, or JSON. This free Chrome extension processes everything
-            locally in your browser — no servers, no cloud, no account required.
+            locally in your browser, with no servers, no cloud, no account required.
           </p>
           <h2>Export Formats</h2>
           <ul>
             <li>Export to PDF with dark mode support</li>
             <li>
-              Export to Markdown — paste into Obsidian, Notion, Roam Research, or
+              Export to Markdown: paste into Obsidian, Notion, Roam Research, or
               any markdown editor
             </li>
             <li>
@@ -324,7 +343,7 @@ export default function RootLayout({
             </li>
             <li>Copy as Markdown to clipboard</li>
             <li>Auto-generated filenames from your first message</li>
-            <li>100% local processing — no data upload</li>
+            <li>100% local processing, no data upload</li>
             <li>Full conversation capture with smart scrolling</li>
           </ul>
           <h2>Supported Models</h2>
